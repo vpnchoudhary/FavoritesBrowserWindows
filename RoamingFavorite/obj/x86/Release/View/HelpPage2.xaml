@@ -1,0 +1,64 @@
+﻿<Page
+    x:Class="RoamingFavorite.View.HelpPage2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RoamingFavorite.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+
+    <Grid Background="#EBECEE">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="setupTitle" Margin="100,0,0,40" Grid.Row="0" Text="Import IE Favorites" Foreground="Black" Style="{StaticResource PageHeaderTextStyle}"/>
+        <TextBlock Grid.Row="1"  Margin="100,20,10,20" Foreground="Black" Text="Instructions to sync IE's favorites on your Windows (Vista/7/8) desktop/laptop to SkyDrive:" Style="{StaticResource TitleTextBlockStyle}"  TextWrapping="Wrap"/>
+        <Border Grid.Row="2" BorderThickness="2" Margin="100,0,20,0" >
+        <Grid HorizontalAlignment="Left">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+            <TextBlock Grid.Column="0" Grid.Row="0" Margin="10" Text="1." Style="{StaticResource ItemTextStyle}"/>
+            <TextBlock Grid.Column="0" Grid.Row="1" Margin="10" Text="2." Style="{StaticResource ItemTextStyle}"/>
+            <TextBlock Grid.Column="0" Grid.Row="2" Margin="10" Text="3." Style="{StaticResource ItemTextStyle}"/>
+            <TextBlock Grid.Column="0" Grid.Row="3" Margin="10" Text="4." Style="{StaticResource ItemTextStyle}"/>
+            <TextBlock Grid.Column="0" Grid.Row="4" Margin="10" Text="5." Style="{StaticResource ItemTextStyle}"/>
+            <TextBlock Grid.Column="0" Grid.Row="5" Margin="10" Text="6." Style="{StaticResource ItemTextStyle}"/>
+            <TextBlock Grid.Column="0" Grid.Row="6" Margin="10" Text="7." Style="{StaticResource ItemTextStyle}"/>
+                <TextBlock Grid.Column="0" Grid.Row="7" Margin="10" Text="8." Style="{StaticResource ItemTextStyle}"/>
+                <TextBlock Grid.Column="1" Grid.Row="0"  Margin="10" IsTextSelectionEnabled="True" Text="Download SkyDrive http://windows.microsoft.com/en-us/skydrive/download" Style="{StaticResource ItemTextStyle}"  TextWrapping="Wrap"/>
+                <TextBlock Grid.Column="1" Grid.Row="1"  Margin="10" IsTextSelectionEnabled="True" Text="Your SkyDrive folder by default is C:\Users\%username%\SkyDrive (%username% is the name of the login ID you use to logon to your computer)" Style="{StaticResource ItemTextStyle}"  TextWrapping="Wrap"/>
+                <TextBlock Grid.Column="1" Grid.Row="2"  Margin="10" IsTextSelectionEnabled="True" Text="Open the user profile directory c:\users\%username%" Style="{StaticResource ItemTextStyle}"  TextWrapping="Wrap"/>
+                <TextBlock Grid.Column="1" Grid.Row="3" Margin="10" IsTextSelectionEnabled="True" Text="Right click on Favorites and click Properties " Style="{StaticResource ItemTextStyle}"  TextWrapping="Wrap"/>
+                <TextBlock Grid.Column="1" Grid.Row="4" Margin="10" IsTextSelectionEnabled="True" Text="Click the Location tab" Style="{StaticResource ItemTextStyle}"  TextWrapping="Wrap"/>
+                <TextBlock Grid.Column="1" Grid.Row="5" Margin="10" IsTextSelectionEnabled="True" Text="Click Move" Style="{StaticResource ItemTextStyle}"  TextWrapping="Wrap"/>
+                <TextBlock Grid.Column="1" Grid.Row="6" Margin="10" IsTextSelectionEnabled="True" Text="Choose the folder C:\Users\%username%\SkyDrive\RoamingFavoritesApp\Bookmark" Style="{StaticResource ItemTextStyle}"  TextWrapping="Wrap"/>
+                <TextBlock Grid.Column="1" Grid.Row="7" Margin="10" IsTextSelectionEnabled="True" Text="Done. Repeat above instructions for all of your laptop/desktop" Style="{StaticResource ItemTextStyle}"  TextWrapping="Wrap"/>
+            <Border Grid.Column="2" Grid.RowSpan="7" BorderThickness="10" Margin="0,0,10,0" Background="Black" >
+                <Image x:Name="setupImage" HorizontalAlignment="Left" Source="ms-appx:///Assets/SkyDriveSetupInstruction.png" Opacity=".9" Stretch="Fill" MaxHeight="400" />
+            </Border>
+            <StackPanel Grid.Row="8" Grid.ColumnSpan="3" HorizontalAlignment="Right" Orientation="Horizontal">
+                    <Button x:ConnectionId='1' x:Name="emailButton" Foreground="Black"  Margin="0,-5,20,0"                             Style="{StaticResource MailAppBarButtonStyle}"/>
+                    <Button x:ConnectionId='2' x:Name="nextButton" Foreground="Black" Margin="0,-5,20,0"                  Style="{StaticResource NextAppBarButtonStyle}"/>
+            </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>
+

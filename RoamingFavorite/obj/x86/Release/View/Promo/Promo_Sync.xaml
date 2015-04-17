@@ -1,0 +1,118 @@
+﻿<common:LayoutAwarePage
+    x:Name="pageRoot"
+    x:Class="RoamingFavorite.View.Promo_Sync"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RoamingFavorite.View"
+    xmlns:common="using:RoamingFavorite.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <SolidColorBrush x:Key="RadioButtonBackgroundBlack" Color="Black"></SolidColorBrush>
+        <SolidColorBrush x:Key="RadioButtonBackgroundGray" Color="Gray"></SolidColorBrush>
+        <Style x:Key="MessageTextBlockStyle" TargetType="TextBlock" BasedOn="{StaticResource BaseTextBlockStyle}">
+            <Setter Property="FontWeight" Value="Light"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="LineHeight" Value="27"/>       
+        </Style>
+        <CollectionViewSource x:Name="promoItemsViewSource" />
+        <UserControl x:Name="customRadioButton">
+            <Grid Width="13" Height="13" Margin="3" Background="Black">
+                <Ellipse x:Name="Circle" Fill="Gray" StrokeThickness="1"/>
+            </Grid>
+        </UserControl>
+        <Style x:Key="customRadioButtonStyle" TargetType="RadioButton">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="{StaticResource RadioButtonContentForegroundThemeBrush}"/>
+            <Setter Property="Padding" Value="1,4,0,0"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Top"/>
+            <Setter Property="FontFamily" Value="{StaticResource ContentControlThemeFontFamily}"/>
+            <Setter Property="FontSize" Value="{StaticResource ControlContentThemeFontSize}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RadioButton">
+                        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="PointerOver">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="BackgroundEllipse">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource RadioButtonPointerOverBackgroundThemeBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Stroke" Storyboard.TargetName="BackgroundEllipse">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource RadioButtonPointerOverBorderThemeBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="CheckGlyph">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource RadioButtonPointerOverForegroundThemeBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="CheckStates">
+                                    <VisualState x:Name="Checked">
+                                        <Storyboard>
+                                            <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="CheckGlyph"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Unchecked"/>
+                                    <VisualState x:Name="Indeterminate"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Grid>
+                                <Ellipse x:Name="BackgroundEllipse" Fill="{StaticResource RadioButtonBackgroundGray}" Height="10" Margin="3,3,3,3" StrokeThickness="{StaticResource RadioButtonBorderThemeThickness}" UseLayoutRounding="True"  Width="10"/>
+                                <Ellipse x:Name="CheckGlyph" Fill="{StaticResource RadioButtonForegroundThemeBrush}" HorizontalAlignment="Right" Height="10" Margin="3,3,3,3" Opacity="0" VerticalAlignment="Top" Width="10"/>
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    
+    <!--
+        This grid acts as a root panel for the page that defines two rows:
+        * Row 1 contains the back button and page title
+        * Row 0 contains the rest of the page layout
+    -->
+    <Grid x:ConnectionId='1' Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" ManipulationMode="TranslateX"                                                                                                   >
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Margin="50,30,20,0"  VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" HorizontalAlignment="Center" Text="{Binding Path=PromoHeader}" Style="{StaticResource PageSubheaderTextStyle}" FontWeight="Bold" />
+            <Image Grid.Row="1" Margin="0,10,0,20"  Source="{Binding Path=PromoImagePath}" Stretch="{Binding Path=ImageStretchOption}" MaxHeight="400" MaxWidth="700" />
+            <TextBlock Grid.Row="2" IsTextSelectionEnabled="True" MaxWidth="{Binding Path=PromoMessageWidth}" HorizontalAlignment="Center" Text="{Binding Path=PromoMessage}" Style="{StaticResource  MessageTextBlockStyle}" TextWrapping="WrapWholeWords" />
+        </Grid>
+        <!-- Back button and page title -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="50*"/>
+            </Grid.ColumnDefinitions>
+            <AppBarButton x:ConnectionId='2' Margin="50,0,0,0" Icon="Back" IsCompact="True"                     />
+            <StackPanel Margin="0,0,50,0" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                <AppBarButton x:ConnectionId='3' Margin="0,0,10,0" Icon="Mail"                           IsCompact="True" Visibility="{Binding ShowEmailButton, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                <AppBarButton x:ConnectionId='4' Icon="Forward" IsCompact="True"                         />
+            </StackPanel>
+            <StackPanel Margin="0,-30,0,0" x:Name="radioList" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center">
+            </StackPanel>
+        </Grid>
+    </Grid>
+</common:LayoutAwarePage>
+

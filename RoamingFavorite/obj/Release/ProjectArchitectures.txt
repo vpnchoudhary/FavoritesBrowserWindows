@@ -1,0 +1,1 @@
+C:\poc\roamsvc-code\RoamingFavorite\RoamingFavorite.csproj;neutral

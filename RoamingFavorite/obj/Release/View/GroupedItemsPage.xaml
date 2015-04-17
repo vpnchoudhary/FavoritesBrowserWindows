@@ -1,0 +1,312 @@
+﻿<common:LayoutAwarePage
+    x:Class="RoamingFavorite.View.GroupedItemsPage"
+    IsTabStop="false"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RoamingFavorite"
+    xmlns:data="using:RoamingFavorite.Data"
+    xmlns:common="using:RoamingFavorite.Common"
+    xmlns:view="using:RoamingFavorite.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <CollectionViewSource
+            x:Name="groupedItemsViewSource" />
+        <x:String x:Key="ChevronGlyph">&#xE26B;</x:String>
+        <Style x:Key="PreviousAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+            <Setter Property="AutomationProperties.AutomationId" Value="PreviousAppBarButton"/>
+            <Setter Property="AutomationProperties.Name" Value=""/>
+            <Setter Property="Content" Value="&#xE112;"/>
+        </Style>
+        <view:TileTemplateSelector x:Key="TileTemplateSelector" FileItemTemplate="{StaticResource BookmarkFileTemplate}" 
+                                    FolderItemTemplate="{StaticResource BookmarkFolderTemplate}"
+                                   AdItemTemplate="{StaticResource AdTemplate}"
+                                   AdItemTemplate2="{StaticResource AdTemplate2}"/>
+        <view:ListViewTileTemplateSelector x:Key="ListViewTileTemplateSelector" FileItemTemplate="{StaticResource ListviewBookmarkFileTemplate}" 
+                                    FolderItemTemplate="{StaticResource ListviewBookmarkFolderTemplate}"
+                                   AdItemTemplate="{StaticResource AdTemplate}"
+                                   AdItemTemplate2="{StaticResource AdTemplate2}"/>
+    </Page.Resources>
+    <Page.BottomAppBar>
+        <AppBar x:ConnectionId='1'                       >
+            <Grid Margin="10,0,0,0" >
+                <StackPanel Orientation="Horizontal" x:Name="clipboardUrlMessageGrid" Visibility="Collapsed" >
+                    <StackPanel Orientation="Vertical" >
+                        <TextBlock Style="{StaticResource BodyTextBlockStyle}" Text="Add copied url to your favorite list?"  />
+                        <TextBlock x:Name="clipBoardNotification" MaxWidth="500" FontStyle="Italic" FontSize="12" Style="{StaticResource BodyTextBlockStyle}" TextWrapping="NoWrap" />
+                    </StackPanel>
+                    <StackPanel  x:Name="clipboardUrlCommandPanel" HorizontalAlignment="Left" Orientation="Horizontal">
+                        <Button x:ConnectionId='13' x:Name="AddCopiedURL" Margin="0,0,-30,0"  Style="{StaticResource AddAppBarButtonStyle}" Height="65" AutomationProperties.Name=""                            />
+                        <Button x:ConnectionId='14' x:Name="DiscardCopiedURL" Style="{StaticResource DiscardAppBarButtonStyle}"                             Height="65" AutomationProperties.Name=""  />
+                    </StackPanel>
+                </StackPanel>
+                <Grid x:Name="bottonCommandBar" Grid.ColumnSpan="2" >
+                    <StackPanel x:Name="LeftCommandBar" Orientation="Horizontal" HorizontalAlignment="Left">
+                        <AppBarButton x:ConnectionId='9' Margin="0,0,-30,0" x:Name="DeleteAppBarButton"  Icon="Delete" IsCompact="False" Label="Delete a Bookmark"                                  />
+                        <AppBarButton x:ConnectionId='10' Margin="0,0,-30,0" x:Name="EditAppBarButton"  Icon="Edit" IsCompact="False" Label="Rename"                                />
+                        <AppBarButton x:ConnectionId='11' Margin="0,0,-30,0" x:Name="MoveAppBarButton"  Icon="MoveToFolder" IsCompact="False" Label="Move"                                />
+                        <AppBarButton x:ConnectionId='12' Margin="0,0,-30,0" x:Name="EmailAppBarButton"  Icon="Mail" IsCompact="False" Label="Email"                                />
+                    </StackPanel>
+                    <StackPanel x:Name="RightCommandBar" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,10,0">
+                        <AppBarButton x:ConnectionId='2' Margin="0,0,-30,0" x:Name="buttonClearSelection" Icon="ClearSelection" IsCompact="False" Label="Clear Selection" ToolTipService.ToolTip="Clear Selection" Visibility="Collapsed"                                    />
+                        <AppBarButton x:ConnectionId='3' Margin="0,0,-30,0" x:Name="creditCard" Content="&#x1F4DD;" Style="{StaticResource AppBarButtonStyle}" AutomationProperties.Name="Notes" IsCompact="False" Label="Notes" ToolTipService.ToolTip="Notes" Visibility="Visible"                          />
+                        <AppBarButton x:ConnectionId='4' Margin="0,0,-30,0" x:Name="webAccount" Content="&#xE136;" IsCompact="False" Style="{StaticResource AppBarButtonStyle}" AutomationProperties.Name="Web Account" ToolTipService.ToolTip="View Account" Visibility="Visible"                          />
+                        <AppBarButton x:ConnectionId='5' Margin="0,0,-30,0"  x:Name="AddAppBarButton"  Icon="Add" IsCompact="False" Label="Add a Bookmark" ToolTipService.ToolTip="Add a Bookmark"                               />
+                        <AppBarButton x:ConnectionId='6' Margin="0,0,-30,0" x:Name="AddFolderAppBarButton" Icon="NewFolder" IsCompact="False" Label="New Folder" ToolTipService.ToolTip="New Folder"                                     />
+                        <AppBarButton x:ConnectionId='7' Margin="0,0,-30,0" x:Name="syncButton" Icon="Sync" IsCompact="False" Label="Refresh" ToolTipService.ToolTip="Refresh"                                   />
+                        <AppBarButton x:ConnectionId='8' Margin="0,0,-30,0" x:Name="SettingAppBarButton" Icon="Setting" IsCompact="False" Label="Setting" ToolTipService.ToolTip="Setting"                                   />
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </AppBar>
+    </Page.BottomAppBar>
+
+    <!--
+        This grid acts as a root panel for the page that defines two rows:
+        * Row 0 contains the back button and page title
+        * Row 1 contains the rest of the page layout
+    -->
+    
+    <Grid Style="{StaticResource LayoutRootStyle}" Background="#EBECEE" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="15"/>
+        </Grid.RowDefinitions>
+        <!-- Back button and page title -->
+        <!--<Grid Background="LightGray">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <ProgressBar x:Name="mainProgressBar" VerticalAlignment="Top" Margin="0,10,0,0" IsIndeterminate="True"  Grid.ColumnSpan="3"  />
+            <Button x:Name="backButton" Opacity=".8"  Click="GoBack" Style="{StaticResource BackButtonStyle}" VerticalAlignment="Center" Margin="36,0,20,0"/>
+            <StackPanel Grid.Column="1" x:Name="Header" Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,0" >
+                <TextBlock x:Name="txtUserName" Text="{Binding UserName}" TextWrapping="NoWrap" Margin="10,0,10,0" FontWeight="SemiBold" Style="{StaticResource SubheaderTextBlockStyle}" Typography.Capitals="SmallCaps" />
+                <TextBlock x:Name="glyph" VerticalAlignment="Bottom" Text="{StaticResource ChevronGlyph}" Visibility="Visible" Margin="0,0,10,0" Style="{StaticResource SubheaderTextBlockStyle}" FontFamily="Segoe UI Symbol" TextWrapping="NoWrap" />
+                <TextBlock x:Name="FolderName" VerticalAlignment="Bottom" Text="{Binding SelectedFolderName}"  FontWeight="SemiBold"  Style="{StaticResource SubheaderTextBlockStyle}" TextWrapping="NoWrap" Typography.Capitals="SmallCaps"  />
+                <SearchBox x:Name="mySearchBox" BorderThickness="1" BorderBrush="Gray" HorizontalAlignment="Left" VerticalAlignment="Center" PlaceholderText="Browse internet or search your favorites here..."
+                       Background="White" Margin="0,0,20,0" SuggestionsRequested="SearchBoxEventsSuggestionsRequested" IsTabStop="False"
+                       QuerySubmitted="SearchBoxEventsQuerySubmitted" PrepareForFocusOnKeyboardInput="mySearchBox_PrepareForFocusOnKeyboardInput" ResultSuggestionChosen="mySearchBox_ResultSuggestionChosen" LostFocus="mySearchBox_LostFocus" FocusOnKeyboardInput="False" GotFocus="mySearchBox_GotFocus"   Height="35" SearchHistoryEnabled="False"  />
+                <AppBarButton x:Name="collectionEditButton" Margin="-10,0,0,0" Icon="Edit" ToolTipService.ToolTip="Edit favorites" IsCompact="True" Click="EditCollection_Click" />
+                <AppBarButton x:Name="collectionCancelButton" Margin="-10,0,0,0" Icon="Cancel" ToolTipService.ToolTip="Discard favorites edit" IsCompact="True" Click="EditCollection_Click" Visibility="Collapsed" />
+            </StackPanel>
+            <TextBlock Grid.Column="2"  x:Name="pageTitle" Opacity=".6" VerticalAlignment="Center" Margin="0,0,10,10" Text="{StaticResource AppName}" Typography.Capitals="SmallCaps" FontWeight="SemiBold" Style="{StaticResource SubheaderTextBlockStyle}" TextWrapping="NoWrap"  />
+        </Grid>-->
+        <Grid Background="#EBECEE">
+            <ProgressBar x:Name="mainProgressBar" VerticalAlignment="Top" Margin="0,5,0,0" IsIndeterminate="True"/>
+            <StackPanel VerticalAlignment="Top" x:Name="FolderNamePanel" Orientation="Horizontal" Margin="104,0,0,0" >
+                <TextBlock x:Name="FolderName" Opacity=".6" VerticalAlignment="Center" Text="{Binding SelectedFolderName}"  FontWeight="SemiBold" Margin="0,0,10,0"  Style="{StaticResource SubheaderTextBlockStyle}" TextWrapping="NoWrap" Typography.Capitals="SmallCaps"  />
+                <TextBlock x:Name="glyph" Opacity=".6" VerticalAlignment="Center" Text="{StaticResource ChevronGlyph}" Visibility="Visible" Margin="0,0,10,0" Style="{StaticResource SubheaderTextBlockStyle}" FontFamily="Segoe UI Symbol" TextWrapping="NoWrap" />
+            </StackPanel>
+            <Button x:ConnectionId='25' x:Name="ImportIEButton" Margin="0,3,10,0" Height="35" Content="Import IE Favorites" VerticalAlignment="Top" HorizontalAlignment="Right"                                 />
+        </Grid>
+       
+        <TextBlock x:Name="NewSetup" Grid.Row="0" Margin="80,80,0,0" HorizontalAlignment="Left" LineStackingStrategy="BlockLineHeight"  VerticalAlignment="Top" Visibility="Collapsed" TextWrapping="Wrap" FontSize="30" />
+        <!-- Horizontal scrolling grid used in most view states -->
+        <view:VariableGridView x:ConnectionId='15'
+            x:Name="itemGridView"
+            AutomationProperties.AutomationId="ItemGridView"
+            AutomationProperties.Name="Grouped Items"
+            Margin="0,35,0,6"
+            Padding="100,0,40,46"
+            ItemsSource="{Binding Source={StaticResource groupedItemsViewSource}}"
+            ItemTemplateSelector="{StaticResource TileTemplateSelector}"
+            SelectionMode="Multiple"
+            SelectedIndex="-1"
+                                                            
+            IsItemClickEnabled="True"
+                                           >
+            <GridView.ItemContainerTransitions>
+                <TransitionCollection>
+                    <EntranceThemeTransition FromHorizontalOffset="100" IsStaggeringEnabled="True"/>
+                </TransitionCollection>
+            </GridView.ItemContainerTransitions>
+            <GridView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <VariableSizedWrapGrid Orientation="Vertical" Margin="0,0,80,0" />
+                </ItemsPanelTemplate>
+            </GridView.ItemsPanel>
+        </view:VariableGridView>
+        <StackPanel x:ConnectionId='16' Grid.Row="1" Background="LightGray" IsTapEnabled="True"                                   >
+            <TextBlock Text="..."  FontSize="20" FontStretch="UltraExpanded" FontWeight="ExtraBold" HorizontalAlignment="Right" Margin="0,-7,10,0" />    
+        </StackPanel>
+        
+        <TextBlock
+            x:Name="noResultsTextBlock"
+            
+            Margin="120,50,0,0"
+            Visibility="Collapsed"
+            Style="{StaticResource SubheaderTextBlockStyle}"
+            Text="No results match your search." />
+        <Popup x:Name="CreateFolderPopUP" IsLightDismissEnabled="True" IsOpen="False" >
+            <Border BorderBrush="Black" Background="White" BorderThickness="2" Width="250" Height="150">
+            <Grid VerticalAlignment="Center" x:Name="popGrid" Width="Auto" Height="Auto" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock Margin="10" Grid.Row="0" Text="Folder Name" Style="{StaticResource ResourceKey=TitleTextBlockStyle}" />
+                <TextBox Margin="10"  Grid.Row="1" Name="CreateFolderName" />
+                    <Button x:ConnectionId='23' Grid.Row="2" x:Name="CreateFolderButton" Content="Create" HorizontalAlignment="Right" Margin="10"                                  />
+                <Button x:ConnectionId='24' Grid.Row="2" x:Name="UpdateFolderButton" Content="Update" Visibility="Collapsed" HorizontalAlignment="Right" Margin="10"                                  />
+                </Grid>
+            </Border>
+        </Popup>
+
+        <Popup x:Name="AddBookmarkPopup" IsLightDismissEnabled="True" IsOpen="False" >
+            <Border x:Name="AddBookMarkBorder" BorderBrush="Black" Background="White" BorderThickness="2"  Width="400" Height="250" >
+                <Grid VerticalAlignment="Center" Width="Auto" Height="Auto" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Margin="10" Grid.Row="0" Text="Bookmark Name" Style="{StaticResource ResourceKey=TitleTextBlockStyle}" />
+                    <TextBox Margin="10"  Grid.Row="1" Name="AddBookmarkName" TextWrapping="NoWrap" />
+                    <TextBlock Margin="10" Grid.Row="2" Text="Bookmark URL" Style="{StaticResource ResourceKey=TitleTextBlockStyle}" />
+                    <TextBox Margin="10"  Grid.Row="3" Name="AddBookmarkURL" TextWrapping="NoWrap" />
+                    <Button x:ConnectionId='21' Grid.Row="4" x:Name="CreateBookmarkButton" Content="Create" HorizontalAlignment="Right" Margin="10"                                 />
+                    <Button x:ConnectionId='22' Grid.Row="4" x:Name="UpdateBookmarkButton"  Visibility="Collapsed" Content="Update" HorizontalAlignment="Right" Margin="10"                                    />
+                </Grid>
+            </Border>
+        </Popup>
+
+        <Popup x:ConnectionId='17' x:Name="SelectDestinationPopup" IsLightDismissEnabled="True"                                        IsOpen="False" >
+            <Border BorderBrush="Black" Background="White" BorderThickness="2" Width="400" Height="450" >
+                <view:SelectFolderUserControl x:ConnectionId='20' x:Name="SelectFolderUserCntl"                                             />
+            </Border>
+        </Popup>
+
+
+        <!-- Vertical scrolling list only used when snapped -->
+        <ListView x:ConnectionId='18'
+            x:Name="itemListView"
+            AutomationProperties.AutomationId="ItemListView"
+            AutomationProperties.Name="Grouped Items"
+            Grid.Row="0"
+            Visibility="Collapsed"
+            Margin="0,10,0,0"
+            Padding="40,0,0,60"
+            ItemsSource="{Binding Source={StaticResource groupedItemsViewSource}}"
+            ItemTemplateSelector="{StaticResource ListViewTileTemplateSelector}"
+            SelectionMode="None"
+            IsItemClickEnabled="True"
+                                          >
+            <ListView.GroupStyle>
+                <GroupStyle>
+                    <GroupStyle.HeaderTemplate>
+                        <DataTemplate>
+                            <Grid Margin="7,7,0,0">
+                                <Button x:ConnectionId='19'
+                                    AutomationProperties.Name="Group Title"
+                                    Content="{Binding Title}"
+                                                        
+                                    Style="{StaticResource TextButtonStyle}"/>
+                            </Grid>
+                        </DataTemplate>
+                    </GroupStyle.HeaderTemplate>
+                </GroupStyle>
+            </ListView.GroupStyle>
+        </ListView>
+
+        <VisualStateManager.VisualStateGroups>
+
+            <!-- Visual states reflect the application's view state -->
+            <VisualStateGroup x:Name="ApplicationViewStates">
+                <VisualState x:Name="FullScreenLandscape">
+                    <!--<Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="mySearchBox" Storyboard.TargetProperty="Width">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="270"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>-->
+                </VisualState>
+                <VisualState x:Name="Filled">
+                    <Storyboard>
+                        <!--<ObjectAnimationUsingKeyFrames Storyboard.TargetName="backButton" Storyboard.TargetProperty="Style">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PortraitBackButtonStyle}"/>
+                        </ObjectAnimationUsingKeyFrames>-->
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="itemGridView" Storyboard.TargetProperty="Padding">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="96,0,10,56"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>    
+
+                <!-- The entire page respects the narrower 100-pixel margin convention for portrait -->
+                <VisualState x:Name="FullScreenPortrait">
+                    <Storyboard>
+                        <!--<ObjectAnimationUsingKeyFrames Storyboard.TargetName="backButton" Storyboard.TargetProperty="Style">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PortraitBackButtonStyle}"/>
+                        </ObjectAnimationUsingKeyFrames>-->
+
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="itemGridView" Storyboard.TargetProperty="Padding">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="96,0,10,56"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+
+                <!--
+                    The back button and title have different styles when snapped, and the list representation is substituted
+                    for the grid displayed in all other view states
+                -->
+                <VisualState x:Name="Snapped">
+                    <Storyboard>
+                        <!--<ObjectAnimationUsingKeyFrames Storyboard.TargetName="backButton" Storyboard.TargetProperty="Style">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SnappedBackButtonStyle}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="backButton" Storyboard.TargetProperty="Margin">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="10,15,0,-15"/>
+                        </ObjectAnimationUsingKeyFrames>-->
+                        <!--<ObjectAnimationUsingKeyFrames Storyboard.TargetName="FolderNamePanel" Storyboard.TargetProperty="Margin">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="50,0,0,0"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        --><!--<ObjectAnimationUsingKeyFrames Storyboard.TargetName="pageTitle" Storyboard.TargetProperty="Style">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubheaderTextBlockStyle}"/>
+                        </ObjectAnimationUsingKeyFrames>--><!--
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ImportIEButton" Storyboard.TargetProperty="Visibility">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                        </ObjectAnimationUsingKeyFrames>-->
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="itemListView" Storyboard.TargetProperty="Visibility">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="itemGridView" Storyboard.TargetProperty="Visibility">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <!--<ObjectAnimationUsingKeyFrames Storyboard.TargetName="mySearchBox" Storyboard.TargetProperty="Width">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="30"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="mySearchBox" Storyboard.TargetProperty="HorizontalAlignment">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Right"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LeftCommandBar" Storyboard.TargetProperty="Visibility">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="clipBoardNotification" Storyboard.TargetProperty="MaxWidth">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="220"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="clipBoardNotification" Storyboard.TargetProperty="TextWrapping">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Wrap"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="clipBoardNotification" Storyboard.TargetProperty="MaxHeight">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="80"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="clipboardUrlCommandPanel" Storyboard.TargetProperty="Orientation">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Vertical"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="AddCopiedURL" Storyboard.TargetProperty="Margin">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="0,0,0,-20"/>
+                        </ObjectAnimationUsingKeyFrames>-->
+                    </Storyboard>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </Grid>
+</common:LayoutAwarePage>
+

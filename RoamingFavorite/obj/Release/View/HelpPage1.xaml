@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="RoamingFavorite.View.HelpPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RoamingFavorite.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="WhiteSmoke" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="setupTitle" Margin="10" Grid.Row="0" Text="Welcome to Favorites Browser" Style="{StaticResource PageSubheaderTextStyle}" /> 
+            <Grid Background="WhiteSmoke" Grid.Row="1" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="imageAssociated" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="40,10,0,10" Foreground="Orange" Text="Hi." FontSize="150" FontWeight="ExtraBold" />
+                <Border Grid.Column="1" BorderThickness="30" Background="Gray" >
+                    <Image x:Name="setupImage" Source="ms-appx:///Assets/AppView.png" />
+                </Border>
+            </Grid>
+            <TextBlock x:Name="setupInstruction" Margin="10" Text="Lets get started. We will need to get IE favorite on your desktop synced to skydrive. The next few steps will help you configure your desktop" Style="{StaticResource PageSubheaderTextStyle}"  Grid.Row="2"  TextWrapping="Wrap"/>
+            <Button x:Name="nextButton" Grid.Row="3" Margin="10" HorizontalAlignment="Right"  Style="{StaticResource NextAppBarButtonStyle}"/>
+        
+    </Grid>
+</Page>
+

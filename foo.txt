@@ -1,0 +1,1572 @@
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   Backup/RoamingFavorite/Package.appxmanifest
+#	new file:   Backup/RoamingFavorite/RoamingFavorite.csproj
+#	new file:   RoamingFavorite.v11.suo
+#	modified:   RoamingFavorite.v12.suo
+#	new file:   RoamingFavorite/AppPackages/AppPackages.zip
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.1_x86_Test/RoamingFavorite_1.1.0.1_x86.appx
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM.appxupload
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.ps1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/cs-CZ/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/de-DE/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/en-US/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/es-ES/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/fr-FR/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/it-IT/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/ja-JP/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/ko-KR/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/pl-PL/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/pt-BR/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/ru-RU/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/tr-TR/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/zh-CN/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/zh-TW/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/RoamingFavorite_1.1.0.2_ARM.appx
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/RoamingFavorite_1.1.0.2_ARM.cer
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64.appxupload
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.ps1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/cs-CZ/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/de-DE/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/en-US/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/es-ES/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/fr-FR/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/it-IT/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/ja-JP/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/ko-KR/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/pl-PL/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/pt-BR/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/ru-RU/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/tr-TR/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/zh-CN/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/zh-TW/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/RoamingFavorite_1.1.0.2_x64.appx
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/RoamingFavorite_1.1.0.2_x64.cer
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86.appxupload
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.ps1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/cs-CZ/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/de-DE/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/en-US/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/es-ES/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/fr-FR/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/it-IT/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/ja-JP/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/ko-KR/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/pl-PL/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/pt-BR/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/ru-RU/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/tr-TR/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/zh-CN/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/zh-TW/Add-AppDevPackage.psd1
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/RoamingFavorite_1.1.0.2_x86.appx
+#	new file:   RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/RoamingFavorite_1.1.0.2_x86.cer
+#	modified:   RoamingFavorite/View/ContentViewerWithAppBar.xaml
+#	modified:   RoamingFavorite/View/ContentViewerWithAppBar.xaml.cs
+#	new file:   RoamingFavorite/bin/ARM/Release/App.xbf
+#	new file:   RoamingFavorite/bin/ARM/Release/AppxManifest.xml
+#	new file:   RoamingFavorite/bin/ARM/Release/Common/StandardStyles.xbf
+#	new file:   RoamingFavorite/bin/ARM/Release/Microsoft.Live.dll
+#	new file:   RoamingFavorite/bin/ARM/Release/RoamingFavorite.build.appxrecipe
+#	new file:   RoamingFavorite/bin/ARM/Release/RoamingFavorite.exe
+#	new file:   RoamingFavorite/bin/ARM/Release/RoamingFavorite.pdb
+#	new file:   RoamingFavorite/bin/ARM/Release/SimpleSettingsNarrow.xbf
+#	new file:   RoamingFavorite/bin/ARM/Release/View/ContentViewerWithAppBar.xbf
+#	new file:   RoamingFavorite/bin/ARM/Release/View/CredentialSettingsFlyout.xbf
+#	new file:   RoamingFavorite/bin/ARM/Release/View/GroupedItemsPage.xbf
+#	new file:   RoamingFavorite/bin/ARM/Release/View/HelpPage1.xbf
+#	new file:   RoamingFavorite/bin/ARM/Release/View/HelpPage2.xbf
+#	new file:   RoamingFavorite/bin/ARM/Release/View/OptionsSettingFlyout.xbf
+#	new file:   RoamingFavorite/bin/ARM/Release/View/Promo/Promo_Sync.xbf
+#	new file:   RoamingFavorite/bin/ARM/Release/View/SearchResultsPage.xbf
+#	new file:   RoamingFavorite/bin/ARM/Release/View/SelectFolderUserControl.xbf
+#	new file:   RoamingFavorite/bin/ARM/Release/View/ShareFavorite.xbf
+#	new file:   RoamingFavorite/bin/ARM/Release/View/ShareTargetFav.xbf
+#	new file:   RoamingFavorite/bin/ARM/Release/resources.pri
+#	new file:   RoamingFavorite/bin/Debug/App.xbf
+#	new file:   RoamingFavorite/bin/Debug/AppX/App.xbf
+#	new file:   RoamingFavorite/bin/Debug/AppX/AppxManifest.xml
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/AppView.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/BackArrow.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/BadgeLogo.scale-100.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/BrandRoamingFav_150.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/BrandRoamingFav_50.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/BrandRoamingFav_620.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/DarkGray.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/Folder-icon.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/Folder.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/FolderIcon.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/LightGray.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/Logo.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/MediumGray.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/Promo_SavePassword.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/Promo_ShareFavorite.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/Promo_Snapmode_project.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/RoamingFavlatest_flash.scale-100.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/RoamingFavorite_LandingPage.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/RoamingFavorite_sync.jpg
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/SkyDrive.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/SkyDriveSetupInstruction.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/SmallLogo.scale-100.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/SplashScreen.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/Square150x150Logo.scale-100.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/Square70x70Logo.scale-100.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/StoreLogo.scale-100.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/Wide310x150Logo.scale-100.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/background.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/bg-body.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/favorite.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Assets/html.png
+#	new file:   RoamingFavorite/bin/Debug/AppX/Common/StandardStyles.xbf
+#	new file:   RoamingFavorite/bin/Debug/AppX/Microsoft.Live.dll
+#	new file:   RoamingFavorite/bin/Debug/AppX/RoamingFavorite.exe
+#	new file:   RoamingFavorite/bin/Debug/AppX/SimpleSettingsNarrow.xbf
+#	new file:   RoamingFavorite/bin/Debug/AppX/View/ContentViewerWithAppBar.xbf
+#	new file:   RoamingFavorite/bin/Debug/AppX/View/CredentialSettingsFlyout.xbf
+#	new file:   RoamingFavorite/bin/Debug/AppX/View/GroupedItemsPage.xbf
+#	new file:   RoamingFavorite/bin/Debug/AppX/View/HelpPage1.xbf
+#	new file:   RoamingFavorite/bin/Debug/AppX/View/HelpPage2.xbf
+#	new file:   RoamingFavorite/bin/Debug/AppX/View/OptionsSettingFlyout.xbf
+#	new file:   RoamingFavorite/bin/Debug/AppX/View/Promo/Promo_Sync.xbf
+#	new file:   RoamingFavorite/bin/Debug/AppX/View/SearchResultsPage.xbf
+#	new file:   RoamingFavorite/bin/Debug/AppX/View/SelectFolderUserControl.xbf
+#	new file:   RoamingFavorite/bin/Debug/AppX/View/ShareFavorite.xbf
+#	new file:   RoamingFavorite/bin/Debug/AppX/View/ShareTargetFav.xbf
+#	new file:   RoamingFavorite/bin/Debug/AppX/resources.pri
+#	new file:   RoamingFavorite/bin/Debug/AppX/vs.appxrecipe
+#	new file:   RoamingFavorite/bin/Debug/AppxManifest.xml
+#	new file:   RoamingFavorite/bin/Debug/Common/StandardStyles.xbf
+#	new file:   RoamingFavorite/bin/Debug/Microsoft.Live.dll
+#	new file:   RoamingFavorite/bin/Debug/RoamingFavorite.build.appxrecipe
+#	new file:   RoamingFavorite/bin/Debug/RoamingFavorite.exe
+#	new file:   RoamingFavorite/bin/Debug/RoamingFavorite.pdb
+#	new file:   RoamingFavorite/bin/Debug/SimpleSettingsNarrow.xbf
+#	new file:   RoamingFavorite/bin/Debug/View/ContentViewerWithAppBar.xbf
+#	new file:   RoamingFavorite/bin/Debug/View/CredentialSettingsFlyout.xbf
+#	new file:   RoamingFavorite/bin/Debug/View/GroupedItemsPage.xbf
+#	new file:   RoamingFavorite/bin/Debug/View/HelpPage1.xbf
+#	new file:   RoamingFavorite/bin/Debug/View/HelpPage2.xbf
+#	new file:   RoamingFavorite/bin/Debug/View/OptionsSettingFlyout.xbf
+#	new file:   RoamingFavorite/bin/Debug/View/Promo/Promo_Sync.xbf
+#	new file:   RoamingFavorite/bin/Debug/View/SearchResultsPage.xbf
+#	new file:   RoamingFavorite/bin/Debug/View/SelectFolderUserControl.xbf
+#	new file:   RoamingFavorite/bin/Debug/View/ShareFavorite.xbf
+#	new file:   RoamingFavorite/bin/Debug/View/ShareTargetFav.xbf
+#	new file:   RoamingFavorite/bin/Debug/resources.pri
+#	new file:   RoamingFavorite/bin/Release/App.xbf
+#	new file:   RoamingFavorite/bin/Release/AppX/App.xbf
+#	new file:   RoamingFavorite/bin/Release/AppX/AppxManifest.xml
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/AppView.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/BackArrow.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/BadgeLogo.scale-100.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/BrandRoamingFav_150.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/BrandRoamingFav_50.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/BrandRoamingFav_620.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/DarkGray.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/Folder-icon.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/Folder.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/FolderIcon.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/LightGray.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/Logo.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/MediumGray.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/Promo_SavePassword.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/Promo_ShareFavorite.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/Promo_Snapmode_project.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/RoamingFavlatest_flash.scale-100.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/RoamingFavorite_LandingPage.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/RoamingFavorite_skydrive_install.jpg
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/RoamingFavorite_sync.jpg
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/SkyDrive.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/SkyDriveSetupInstruction.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/SmallLogo.scale-100.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/SplashScreen.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/Square150x150Logo.scale-100.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/Square70x70Logo.scale-100.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/StoreLogo.scale-100.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/Wide310x150Logo.scale-100.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/background.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/bg-body.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/favorite.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Assets/html.png
+#	new file:   RoamingFavorite/bin/Release/AppX/Common/StandardStyles.xbf
+#	new file:   RoamingFavorite/bin/Release/AppX/Microsoft.Live.dll
+#	new file:   RoamingFavorite/bin/Release/AppX/RoamingFavorite.exe
+#	new file:   RoamingFavorite/bin/Release/AppX/SimpleSettingsNarrow.xbf
+#	new file:   RoamingFavorite/bin/Release/AppX/View/ContentViewerWithAppBar.xbf
+#	new file:   RoamingFavorite/bin/Release/AppX/View/CredentialSettingsFlyout.xbf
+#	new file:   RoamingFavorite/bin/Release/AppX/View/GroupedItemsPage.xbf
+#	new file:   RoamingFavorite/bin/Release/AppX/View/HelpPage1.xbf
+#	new file:   RoamingFavorite/bin/Release/AppX/View/HelpPage2.xbf
+#	new file:   RoamingFavorite/bin/Release/AppX/View/OptionsSettingFlyout.xbf
+#	new file:   RoamingFavorite/bin/Release/AppX/View/Promo/Promo_Sync.xbf
+#	new file:   RoamingFavorite/bin/Release/AppX/View/SearchResultsPage.xbf
+#	new file:   RoamingFavorite/bin/Release/AppX/View/SelectFolderUserControl.xbf
+#	new file:   RoamingFavorite/bin/Release/AppX/View/ShareFavorite.xbf
+#	new file:   RoamingFavorite/bin/Release/AppX/View/ShareTargetFav.xbf
+#	new file:   RoamingFavorite/bin/Release/AppX/microsoft.system.package.metadata/S-1-5-21-2127521184-1604012920-1887927527-2877916.pckgdep
+#	new file:   RoamingFavorite/bin/Release/AppX/resources.pri
+#	new file:   RoamingFavorite/bin/Release/AppX/vs.appxrecipe
+#	new file:   RoamingFavorite/bin/Release/AppxManifest.xml
+#	new file:   RoamingFavorite/bin/Release/Common/StandardStyles.xbf
+#	new file:   RoamingFavorite/bin/Release/Microsoft.Live.dll
+#	new file:   RoamingFavorite/bin/Release/RoamingFavorite.build.appxrecipe
+#	new file:   RoamingFavorite/bin/Release/RoamingFavorite.exe
+#	new file:   RoamingFavorite/bin/Release/RoamingFavorite.pdb
+#	new file:   RoamingFavorite/bin/Release/SimpleSettingsNarrow.xbf
+#	new file:   RoamingFavorite/bin/Release/View/ContentViewerWithAppBar.xbf
+#	new file:   RoamingFavorite/bin/Release/View/CredentialSettingsFlyout.xbf
+#	new file:   RoamingFavorite/bin/Release/View/GroupedItemsPage.xbf
+#	new file:   RoamingFavorite/bin/Release/View/HelpPage1.xbf
+#	new file:   RoamingFavorite/bin/Release/View/HelpPage2.xbf
+#	new file:   RoamingFavorite/bin/Release/View/OptionsSettingFlyout.xbf
+#	new file:   RoamingFavorite/bin/Release/View/Promo/Promo_Sync.xbf
+#	new file:   RoamingFavorite/bin/Release/View/SearchResultsPage.xbf
+#	new file:   RoamingFavorite/bin/Release/View/SelectFolderUserControl.xbf
+#	new file:   RoamingFavorite/bin/Release/View/ShareFavorite.xbf
+#	new file:   RoamingFavorite/bin/Release/View/ShareTargetFav.xbf
+#	new file:   RoamingFavorite/bin/Release/resources.pri
+#	new file:   RoamingFavorite/bin/x64/Release/App.xbf
+#	new file:   RoamingFavorite/bin/x64/Release/AppxManifest.xml
+#	new file:   RoamingFavorite/bin/x64/Release/Common/StandardStyles.xbf
+#	new file:   RoamingFavorite/bin/x64/Release/Microsoft.Live.dll
+#	new file:   RoamingFavorite/bin/x64/Release/RoamingFavorite.build.appxrecipe
+#	new file:   RoamingFavorite/bin/x64/Release/RoamingFavorite.exe
+#	new file:   RoamingFavorite/bin/x64/Release/RoamingFavorite.pdb
+#	new file:   RoamingFavorite/bin/x64/Release/SimpleSettingsNarrow.xbf
+#	new file:   RoamingFavorite/bin/x64/Release/View/ContentViewerWithAppBar.xbf
+#	new file:   RoamingFavorite/bin/x64/Release/View/CredentialSettingsFlyout.xbf
+#	new file:   RoamingFavorite/bin/x64/Release/View/GroupedItemsPage.xbf
+#	new file:   RoamingFavorite/bin/x64/Release/View/HelpPage1.xbf
+#	new file:   RoamingFavorite/bin/x64/Release/View/HelpPage2.xbf
+#	new file:   RoamingFavorite/bin/x64/Release/View/OptionsSettingFlyout.xbf
+#	new file:   RoamingFavorite/bin/x64/Release/View/Promo/Promo_Sync.xbf
+#	new file:   RoamingFavorite/bin/x64/Release/View/SearchResultsPage.xbf
+#	new file:   RoamingFavorite/bin/x64/Release/View/SelectFolderUserControl.xbf
+#	new file:   RoamingFavorite/bin/x64/Release/View/ShareFavorite.xbf
+#	new file:   RoamingFavorite/bin/x64/Release/View/ShareTargetFav.xbf
+#	new file:   RoamingFavorite/bin/x64/Release/resources.pri
+#	new file:   RoamingFavorite/bin/x86/Debug/App.xbf
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/App.xbf
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/AppxManifest.xml
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/Assets/BackArrow.png
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/Assets/BrandRoamingFav_150.png
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/Assets/BrandRoamingFav_50.png
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/Assets/BrandRoamingFav_620.png
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/Assets/DarkGray.png
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/Assets/Folder-icon.png
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/Assets/Folder.png
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/Assets/FolderIcon.png
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/Assets/LightGray.png
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/Assets/Logo.png
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/Assets/MediumGray.png
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/Assets/SkyDrive.png
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/Assets/SmallLogo.png
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/Assets/SplashScreen.png
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/Assets/StoreLogo.png
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/Assets/background.png
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/Assets/bg-body.png
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/Assets/favorite.png
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/Assets/html.png
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/Common/StandardStyles.xbf
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/DataModel/XMLFile1.xml
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/Microsoft.Live.dll
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/RoamingFavorite.exe
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/SimpleSettingsNarrow.xbf
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/View/ContentViewerWithAppBar.xbf
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/View/CredentialSettingsFlyout.xbf
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/View/GroupedItemsPage.xbf
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/View/ShareFavorite.xbf
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/View/ShareTargetFav.xbf
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/resources.pri
+#	new file:   RoamingFavorite/bin/x86/Debug/AppX/vs.appxrecipe
+#	new file:   RoamingFavorite/bin/x86/Debug/AppxManifest.xml
+#	new file:   RoamingFavorite/bin/x86/Debug/Common/StandardStyles.xbf
+#	new file:   RoamingFavorite/bin/x86/Debug/Microsoft.Live.dll
+#	new file:   RoamingFavorite/bin/x86/Debug/RoamingFavorite.build.appxrecipe
+#	new file:   RoamingFavorite/bin/x86/Debug/RoamingFavorite.exe
+#	new file:   RoamingFavorite/bin/x86/Debug/RoamingFavorite.pdb
+#	new file:   RoamingFavorite/bin/x86/Debug/SimpleSettingsNarrow.xbf
+#	new file:   RoamingFavorite/bin/x86/Debug/View/ContentViewerWithAppBar.xbf
+#	new file:   RoamingFavorite/bin/x86/Debug/View/CredentialSettingsFlyout.xbf
+#	new file:   RoamingFavorite/bin/x86/Debug/View/GroupedItemsPage.xbf
+#	new file:   RoamingFavorite/bin/x86/Debug/View/ShareFavorite.xbf
+#	new file:   RoamingFavorite/bin/x86/Debug/View/ShareTargetFav.xbf
+#	new file:   RoamingFavorite/bin/x86/Debug/resources.pri
+#	new file:   RoamingFavorite/bin/x86/Release/App.xbf
+#	new file:   RoamingFavorite/bin/x86/Release/AppxManifest.xml
+#	new file:   RoamingFavorite/bin/x86/Release/Common/StandardStyles.xbf
+#	new file:   RoamingFavorite/bin/x86/Release/Microsoft.Live.dll
+#	new file:   RoamingFavorite/bin/x86/Release/RoamingFavorite.build.appxrecipe
+#	new file:   RoamingFavorite/bin/x86/Release/RoamingFavorite.exe
+#	new file:   RoamingFavorite/bin/x86/Release/RoamingFavorite.pdb
+#	new file:   RoamingFavorite/bin/x86/Release/SimpleSettingsNarrow.xbf
+#	new file:   RoamingFavorite/bin/x86/Release/View/ContentViewerWithAppBar.xbf
+#	new file:   RoamingFavorite/bin/x86/Release/View/CredentialSettingsFlyout.xbf
+#	new file:   RoamingFavorite/bin/x86/Release/View/GroupedItemsPage.xbf
+#	new file:   RoamingFavorite/bin/x86/Release/View/HelpPage1.xbf
+#	new file:   RoamingFavorite/bin/x86/Release/View/HelpPage2.xbf
+#	new file:   RoamingFavorite/bin/x86/Release/View/OptionsSettingFlyout.xbf
+#	new file:   RoamingFavorite/bin/x86/Release/View/Promo/Promo_Sync.xbf
+#	new file:   RoamingFavorite/bin/x86/Release/View/SearchResultsPage.xbf
+#	new file:   RoamingFavorite/bin/x86/Release/View/SelectFolderUserControl.xbf
+#	new file:   RoamingFavorite/bin/x86/Release/View/ShareFavorite.xbf
+#	new file:   RoamingFavorite/bin/x86/Release/View/ShareTargetFav.xbf
+#	new file:   RoamingFavorite/bin/x86/Release/resources.pri
+#	new file:   RoamingFavorite/obj/ARM/Release/App.g.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/App.g.i.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/App.xaml
+#	new file:   RoamingFavorite/obj/ARM/Release/App.xbf
+#	new file:   RoamingFavorite/obj/ARM/Release/Common/StandardStyles.g.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/Common/StandardStyles.g.i.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/Common/StandardStyles.xaml
+#	new file:   RoamingFavorite/obj/ARM/Release/Common/StandardStyles.xbf
+#	new file:   RoamingFavorite/obj/ARM/Release/DesignTimeResolveAssemblyReferencesInput.cache
+#	new file:   RoamingFavorite/obj/ARM/Release/MultipleQualifiersPerDimensionFound.txt
+#	new file:   RoamingFavorite/obj/ARM/Release/ProjectArchitectures.txt
+#	new file:   RoamingFavorite/obj/ARM/Release/RoamingFavorite.csproj.FileListAbsolute.txt
+#	new file:   RoamingFavorite/obj/ARM/Release/RoamingFavorite.csproj.GenerateResource.Cache
+#	new file:   RoamingFavorite/obj/ARM/Release/RoamingFavorite.exe
+#	new file:   RoamingFavorite/obj/ARM/Release/RoamingFavorite.pdb
+#	new file:   RoamingFavorite/obj/ARM/Release/SimpleSettingsNarrow.g.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/SimpleSettingsNarrow.g.i.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/SimpleSettingsNarrow.xaml
+#	new file:   RoamingFavorite/obj/ARM/Release/SimpleSettingsNarrow.xbf
+#	new file:   RoamingFavorite/obj/ARM/Release/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/View/ContentViewerWithAppBar.g.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/View/ContentViewerWithAppBar.g.i.cs
+#	renamed:    RoamingFavorite/View/ContentViewerWithAppBar.xaml -> RoamingFavorite/obj/ARM/Release/View/ContentViewerWithAppBar.xaml
+#	new file:   RoamingFavorite/obj/ARM/Release/View/ContentViewerWithAppBar.xbf
+#	new file:   RoamingFavorite/obj/ARM/Release/View/CredentialSettingsFlyout.g.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/View/CredentialSettingsFlyout.g.i.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/View/CredentialSettingsFlyout.xaml
+#	new file:   RoamingFavorite/obj/ARM/Release/View/CredentialSettingsFlyout.xbf
+#	new file:   RoamingFavorite/obj/ARM/Release/View/GroupedItemsPage.g.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/View/GroupedItemsPage.g.i.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/View/GroupedItemsPage.xaml
+#	new file:   RoamingFavorite/obj/ARM/Release/View/GroupedItemsPage.xbf
+#	new file:   RoamingFavorite/obj/ARM/Release/View/HelpPage1.g.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/View/HelpPage1.g.i.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/View/HelpPage1.xaml
+#	new file:   RoamingFavorite/obj/ARM/Release/View/HelpPage1.xbf
+#	new file:   RoamingFavorite/obj/ARM/Release/View/HelpPage2.g.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/View/HelpPage2.g.i.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/View/HelpPage2.xaml
+#	new file:   RoamingFavorite/obj/ARM/Release/View/HelpPage2.xbf
+#	new file:   RoamingFavorite/obj/ARM/Release/View/OptionsSettingFlyout.g.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/View/OptionsSettingFlyout.g.i.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/View/OptionsSettingFlyout.xaml
+#	new file:   RoamingFavorite/obj/ARM/Release/View/OptionsSettingFlyout.xbf
+#	new file:   RoamingFavorite/obj/ARM/Release/View/Promo/Promo_Sync.g.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/View/Promo/Promo_Sync.g.i.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/View/Promo/Promo_Sync.xaml
+#	new file:   RoamingFavorite/obj/ARM/Release/View/Promo/Promo_Sync.xbf
+#	new file:   RoamingFavorite/obj/ARM/Release/View/SearchResultsPage.g.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/View/SearchResultsPage.g.i.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/View/SearchResultsPage.xaml
+#	new file:   RoamingFavorite/obj/ARM/Release/View/SearchResultsPage.xbf
+#	new file:   RoamingFavorite/obj/ARM/Release/View/SelectFolderUserControl.g.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/View/SelectFolderUserControl.g.i.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/View/SelectFolderUserControl.xaml
+#	new file:   RoamingFavorite/obj/ARM/Release/View/SelectFolderUserControl.xbf
+#	new file:   RoamingFavorite/obj/ARM/Release/View/ShareFavorite.g.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/View/ShareFavorite.g.i.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/View/ShareFavorite.xaml
+#	new file:   RoamingFavorite/obj/ARM/Release/View/ShareFavorite.xbf
+#	new file:   RoamingFavorite/obj/ARM/Release/View/ShareTargetFav.g.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/View/ShareTargetFav.g.i.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/View/ShareTargetFav.xaml
+#	new file:   RoamingFavorite/obj/ARM/Release/View/ShareTargetFav.xbf
+#	new file:   RoamingFavorite/obj/ARM/Release/XamlSaveStateFile.xml
+#	new file:   RoamingFavorite/obj/ARM/Release/XamlTypeInfo.g.cs
+#	new file:   RoamingFavorite/obj/ARM/Release/_pkginfo.txt
+#	new file:   RoamingFavorite/obj/ARM/Release/intermediatexaml/RoamingFavorite.exe
+#	new file:   RoamingFavorite/obj/ARM/Release/intermediatexaml/RoamingFavorite.pdb
+#	new file:   RoamingFavorite/obj/ARM/Release/layout.resfiles
+#	new file:   RoamingFavorite/obj/ARM/Release/layout.resfiles.intermediate
+#	new file:   RoamingFavorite/obj/ARM/Release/package.map.txt
+#	new file:   RoamingFavorite/obj/ARM/Release/pri.resfiles
+#	new file:   RoamingFavorite/obj/ARM/Release/pri.resfiles.intermediate
+#	new file:   RoamingFavorite/obj/ARM/Release/priconfig.xml
+#	new file:   RoamingFavorite/obj/ARM/Release/priconfig.xml.intermediate
+#	new file:   RoamingFavorite/obj/ARM/Release/qualifiers.txt
+#	new file:   RoamingFavorite/obj/ARM/Release/qualifiers.txt.intermediate
+#	new file:   RoamingFavorite/obj/ARM/Release/resources.resfiles
+#	new file:   RoamingFavorite/obj/ARM/Release/resources.resfiles.intermediate
+#	new file:   RoamingFavorite/obj/Debug/App.g.cs
+#	new file:   RoamingFavorite/obj/Debug/App.g.i.cs
+#	new file:   RoamingFavorite/obj/Debug/App.xaml
+#	new file:   RoamingFavorite/obj/Debug/App.xbf
+#	new file:   RoamingFavorite/obj/Debug/Common/StandardStyles.g.cs
+#	new file:   RoamingFavorite/obj/Debug/Common/StandardStyles.g.i.cs
+#	new file:   RoamingFavorite/obj/Debug/Common/StandardStyles.xaml
+#	new file:   RoamingFavorite/obj/Debug/Common/StandardStyles.xbf
+#	new file:   RoamingFavorite/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	new file:   RoamingFavorite/obj/Debug/MultipleQualifiersPerDimensionFound.txt
+#	new file:   RoamingFavorite/obj/Debug/ProjectArchitectures.txt
+#	new file:   RoamingFavorite/obj/Debug/RoamingFavorite.csproj.FileListAbsolute.txt
+#	new file:   RoamingFavorite/obj/Debug/RoamingFavorite.csproj.GenerateResource.Cache
+#	new file:   RoamingFavorite/obj/Debug/RoamingFavorite.exe
+#	new file:   RoamingFavorite/obj/Debug/RoamingFavorite.pdb
+#	new file:   RoamingFavorite/obj/Debug/SimpleSettingsNarrow.g.cs
+#	new file:   RoamingFavorite/obj/Debug/SimpleSettingsNarrow.g.i.cs
+#	new file:   RoamingFavorite/obj/Debug/SimpleSettingsNarrow.xaml
+#	new file:   RoamingFavorite/obj/Debug/SimpleSettingsNarrow.xbf
+#	new file:   RoamingFavorite/obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+#	new file:   RoamingFavorite/obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+#	new file:   RoamingFavorite/obj/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+#	new file:   RoamingFavorite/obj/Debug/View/ContentViewerWithAppBar.g.cs
+#	new file:   RoamingFavorite/obj/Debug/View/ContentViewerWithAppBar.g.i.cs
+#	new file:   RoamingFavorite/obj/Debug/View/ContentViewerWithAppBar.xaml
+#	new file:   RoamingFavorite/obj/Debug/View/ContentViewerWithAppBar.xbf
+#	new file:   RoamingFavorite/obj/Debug/View/CredentialSettingsFlyout.g.cs
+#	new file:   RoamingFavorite/obj/Debug/View/CredentialSettingsFlyout.g.i.cs
+#	new file:   RoamingFavorite/obj/Debug/View/CredentialSettingsFlyout.xaml
+#	new file:   RoamingFavorite/obj/Debug/View/CredentialSettingsFlyout.xbf
+#	new file:   RoamingFavorite/obj/Debug/View/GroupedItemsPage.g.cs
+#	new file:   RoamingFavorite/obj/Debug/View/GroupedItemsPage.g.i.cs
+#	new file:   RoamingFavorite/obj/Debug/View/GroupedItemsPage.xaml
+#	new file:   RoamingFavorite/obj/Debug/View/GroupedItemsPage.xbf
+#	new file:   RoamingFavorite/obj/Debug/View/HelpPage1.g.cs
+#	new file:   RoamingFavorite/obj/Debug/View/HelpPage1.g.i.cs
+#	new file:   RoamingFavorite/obj/Debug/View/HelpPage1.xaml
+#	new file:   RoamingFavorite/obj/Debug/View/HelpPage1.xbf
+#	new file:   RoamingFavorite/obj/Debug/View/HelpPage2.g.cs
+#	new file:   RoamingFavorite/obj/Debug/View/HelpPage2.g.i.cs
+#	new file:   RoamingFavorite/obj/Debug/View/HelpPage2.xaml
+#	new file:   RoamingFavorite/obj/Debug/View/HelpPage2.xbf
+#	new file:   RoamingFavorite/obj/Debug/View/OptionsSettingFlyout.g.cs
+#	new file:   RoamingFavorite/obj/Debug/View/OptionsSettingFlyout.g.i.cs
+#	new file:   RoamingFavorite/obj/Debug/View/OptionsSettingFlyout.xaml
+#	new file:   RoamingFavorite/obj/Debug/View/OptionsSettingFlyout.xbf
+#	new file:   RoamingFavorite/obj/Debug/View/Promo/Promo_Sync.g.cs
+#	new file:   RoamingFavorite/obj/Debug/View/Promo/Promo_Sync.g.i.cs
+#	new file:   RoamingFavorite/obj/Debug/View/Promo/Promo_Sync.xaml
+#	new file:   RoamingFavorite/obj/Debug/View/Promo/Promo_Sync.xbf
+#	new file:   RoamingFavorite/obj/Debug/View/SearchResultsPage.g.cs
+#	new file:   RoamingFavorite/obj/Debug/View/SearchResultsPage.g.i.cs
+#	new file:   RoamingFavorite/obj/Debug/View/SearchResultsPage.xaml
+#	new file:   RoamingFavorite/obj/Debug/View/SearchResultsPage.xbf
+#	new file:   RoamingFavorite/obj/Debug/View/SelectFolderUserControl.g.cs
+#	new file:   RoamingFavorite/obj/Debug/View/SelectFolderUserControl.g.i.cs
+#	new file:   RoamingFavorite/obj/Debug/View/SelectFolderUserControl.xaml
+#	new file:   RoamingFavorite/obj/Debug/View/SelectFolderUserControl.xbf
+#	new file:   RoamingFavorite/obj/Debug/View/ShareFavorite.g.cs
+#	new file:   RoamingFavorite/obj/Debug/View/ShareFavorite.g.i.cs
+#	new file:   RoamingFavorite/obj/Debug/View/ShareFavorite.xaml
+#	new file:   RoamingFavorite/obj/Debug/View/ShareFavorite.xbf
+#	new file:   RoamingFavorite/obj/Debug/View/ShareTargetFav.g.cs
+#	new file:   RoamingFavorite/obj/Debug/View/ShareTargetFav.g.i.cs
+#	new file:   RoamingFavorite/obj/Debug/View/ShareTargetFav.xaml
+#	new file:   RoamingFavorite/obj/Debug/View/ShareTargetFav.xbf
+#	new file:   RoamingFavorite/obj/Debug/XamlSaveStateFile.xml
+#	new file:   RoamingFavorite/obj/Debug/XamlTypeInfo.g.cs
+#	new file:   RoamingFavorite/obj/Debug/intermediatexaml/RoamingFavorite.exe
+#	new file:   RoamingFavorite/obj/Debug/intermediatexaml/RoamingFavorite.pdb
+#	new file:   RoamingFavorite/obj/Debug/layout.resfiles
+#	new file:   RoamingFavorite/obj/Debug/layout.resfiles.intermediate
+#	new file:   RoamingFavorite/obj/Debug/pri.resfiles
+#	new file:   RoamingFavorite/obj/Debug/pri.resfiles.intermediate
+#	new file:   RoamingFavorite/obj/Debug/priconfig.xml
+#	new file:   RoamingFavorite/obj/Debug/priconfig.xml.intermediate
+#	new file:   RoamingFavorite/obj/Debug/qualifiers.txt
+#	new file:   RoamingFavorite/obj/Debug/qualifiers.txt.intermediate
+#	new file:   RoamingFavorite/obj/Debug/resources.resfiles
+#	new file:   RoamingFavorite/obj/Debug/resources.resfiles.intermediate
+#	new file:   RoamingFavorite/obj/Release/App.g.cs
+#	new file:   RoamingFavorite/obj/Release/App.g.i.cs
+#	new file:   RoamingFavorite/obj/Release/App.xaml
+#	new file:   RoamingFavorite/obj/Release/App.xbf
+#	new file:   RoamingFavorite/obj/Release/Common/StandardStyles.g.cs
+#	new file:   RoamingFavorite/obj/Release/Common/StandardStyles.g.i.cs
+#	new file:   RoamingFavorite/obj/Release/Common/StandardStyles.xaml
+#	new file:   RoamingFavorite/obj/Release/Common/StandardStyles.xbf
+#	new file:   RoamingFavorite/obj/Release/DesignTimeResolveAssemblyReferencesInput.cache
+#	new file:   RoamingFavorite/obj/Release/MultipleQualifiersPerDimensionFound.txt
+#	new file:   RoamingFavorite/obj/Release/ProjectArchitectures.txt
+#	new file:   RoamingFavorite/obj/Release/RoamingFavorite.csproj.FileListAbsolute.txt
+#	new file:   RoamingFavorite/obj/Release/RoamingFavorite.csproj.GenerateResource.Cache
+#	new file:   RoamingFavorite/obj/Release/RoamingFavorite.exe
+#	new file:   RoamingFavorite/obj/Release/RoamingFavorite.pdb
+#	new file:   RoamingFavorite/obj/Release/SimpleSettingsNarrow.g.cs
+#	new file:   RoamingFavorite/obj/Release/SimpleSettingsNarrow.g.i.cs
+#	new file:   RoamingFavorite/obj/Release/SimpleSettingsNarrow.xaml
+#	new file:   RoamingFavorite/obj/Release/SimpleSettingsNarrow.xbf
+#	new file:   RoamingFavorite/obj/Release/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+#	new file:   RoamingFavorite/obj/Release/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+#	new file:   RoamingFavorite/obj/Release/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+#	new file:   RoamingFavorite/obj/Release/View/ContentViewerWithAppBar.g.cs
+#	new file:   RoamingFavorite/obj/Release/View/ContentViewerWithAppBar.g.i.cs
+#	new file:   RoamingFavorite/obj/Release/View/ContentViewerWithAppBar.xaml
+#	new file:   RoamingFavorite/obj/Release/View/ContentViewerWithAppBar.xbf
+#	new file:   RoamingFavorite/obj/Release/View/CredentialSettingsFlyout.g.cs
+#	new file:   RoamingFavorite/obj/Release/View/CredentialSettingsFlyout.g.i.cs
+#	new file:   RoamingFavorite/obj/Release/View/CredentialSettingsFlyout.xaml
+#	new file:   RoamingFavorite/obj/Release/View/CredentialSettingsFlyout.xbf
+#	new file:   RoamingFavorite/obj/Release/View/GroupedItemsPage.g.cs
+#	new file:   RoamingFavorite/obj/Release/View/GroupedItemsPage.g.i.cs
+#	new file:   RoamingFavorite/obj/Release/View/GroupedItemsPage.xaml
+#	new file:   RoamingFavorite/obj/Release/View/GroupedItemsPage.xbf
+#	new file:   RoamingFavorite/obj/Release/View/HelpPage1.g.cs
+#	new file:   RoamingFavorite/obj/Release/View/HelpPage1.g.i.cs
+#	new file:   RoamingFavorite/obj/Release/View/HelpPage1.xaml
+#	new file:   RoamingFavorite/obj/Release/View/HelpPage1.xbf
+#	new file:   RoamingFavorite/obj/Release/View/HelpPage2.g.cs
+#	new file:   RoamingFavorite/obj/Release/View/HelpPage2.g.i.cs
+#	new file:   RoamingFavorite/obj/Release/View/HelpPage2.xaml
+#	new file:   RoamingFavorite/obj/Release/View/HelpPage2.xbf
+#	new file:   RoamingFavorite/obj/Release/View/OptionsSettingFlyout.g.cs
+#	new file:   RoamingFavorite/obj/Release/View/OptionsSettingFlyout.g.i.cs
+#	new file:   RoamingFavorite/obj/Release/View/OptionsSettingFlyout.xaml
+#	new file:   RoamingFavorite/obj/Release/View/OptionsSettingFlyout.xbf
+#	new file:   RoamingFavorite/obj/Release/View/Promo/Promo_Sync.g.cs
+#	new file:   RoamingFavorite/obj/Release/View/Promo/Promo_Sync.g.i.cs
+#	new file:   RoamingFavorite/obj/Release/View/Promo/Promo_Sync.xaml
+#	new file:   RoamingFavorite/obj/Release/View/Promo/Promo_Sync.xbf
+#	new file:   RoamingFavorite/obj/Release/View/SearchResultsPage.g.cs
+#	new file:   RoamingFavorite/obj/Release/View/SearchResultsPage.g.i.cs
+#	new file:   RoamingFavorite/obj/Release/View/SearchResultsPage.xaml
+#	new file:   RoamingFavorite/obj/Release/View/SearchResultsPage.xbf
+#	new file:   RoamingFavorite/obj/Release/View/SelectFolderUserControl.g.cs
+#	new file:   RoamingFavorite/obj/Release/View/SelectFolderUserControl.g.i.cs
+#	new file:   RoamingFavorite/obj/Release/View/SelectFolderUserControl.xaml
+#	new file:   RoamingFavorite/obj/Release/View/SelectFolderUserControl.xbf
+#	new file:   RoamingFavorite/obj/Release/View/ShareFavorite.g.cs
+#	new file:   RoamingFavorite/obj/Release/View/ShareFavorite.g.i.cs
+#	new file:   RoamingFavorite/obj/Release/View/ShareFavorite.xaml
+#	new file:   RoamingFavorite/obj/Release/View/ShareFavorite.xbf
+#	new file:   RoamingFavorite/obj/Release/View/ShareTargetFav.g.cs
+#	new file:   RoamingFavorite/obj/Release/View/ShareTargetFav.g.i.cs
+#	new file:   RoamingFavorite/obj/Release/View/ShareTargetFav.xaml
+#	new file:   RoamingFavorite/obj/Release/View/ShareTargetFav.xbf
+#	new file:   RoamingFavorite/obj/Release/XamlSaveStateFile.xml
+#	new file:   RoamingFavorite/obj/Release/XamlTypeInfo.g.cs
+#	new file:   RoamingFavorite/obj/Release/XamlTypeInfo.g.cs.backup
+#	new file:   RoamingFavorite/obj/Release/intermediatexaml/RoamingFavorite.exe
+#	new file:   RoamingFavorite/obj/Release/intermediatexaml/RoamingFavorite.pdb
+#	new file:   RoamingFavorite/obj/Release/layout.resfiles
+#	new file:   RoamingFavorite/obj/Release/layout.resfiles.intermediate
+#	new file:   RoamingFavorite/obj/Release/pri.resfiles
+#	new file:   RoamingFavorite/obj/Release/pri.resfiles.intermediate
+#	new file:   RoamingFavorite/obj/Release/priconfig.xml
+#	new file:   RoamingFavorite/obj/Release/priconfig.xml.intermediate
+#	new file:   RoamingFavorite/obj/Release/qualifiers.txt
+#	new file:   RoamingFavorite/obj/Release/qualifiers.txt.intermediate
+#	new file:   RoamingFavorite/obj/Release/resources.resfiles
+#	new file:   RoamingFavorite/obj/Release/resources.resfiles.intermediate
+#	new file:   RoamingFavorite/obj/x64/Release/App.g.cs
+#	new file:   RoamingFavorite/obj/x64/Release/App.g.i.cs
+#	new file:   RoamingFavorite/obj/x64/Release/App.xaml
+#	new file:   RoamingFavorite/obj/x64/Release/App.xbf
+#	new file:   RoamingFavorite/obj/x64/Release/Common/StandardStyles.g.cs
+#	new file:   RoamingFavorite/obj/x64/Release/Common/StandardStyles.g.i.cs
+#	new file:   RoamingFavorite/obj/x64/Release/Common/StandardStyles.xaml
+#	new file:   RoamingFavorite/obj/x64/Release/Common/StandardStyles.xbf
+#	new file:   RoamingFavorite/obj/x64/Release/DesignTimeResolveAssemblyReferencesInput.cache
+#	new file:   RoamingFavorite/obj/x64/Release/MultipleQualifiersPerDimensionFound.txt
+#	new file:   RoamingFavorite/obj/x64/Release/ProjectArchitectures.txt
+#	new file:   RoamingFavorite/obj/x64/Release/RoamingFavorite.csproj.FileListAbsolute.txt
+#	new file:   RoamingFavorite/obj/x64/Release/RoamingFavorite.csproj.GenerateResource.Cache
+#	new file:   RoamingFavorite/obj/x64/Release/RoamingFavorite.exe
+#	new file:   RoamingFavorite/obj/x64/Release/RoamingFavorite.pdb
+#	new file:   RoamingFavorite/obj/x64/Release/SimpleSettingsNarrow.g.cs
+#	new file:   RoamingFavorite/obj/x64/Release/SimpleSettingsNarrow.g.i.cs
+#	new file:   RoamingFavorite/obj/x64/Release/SimpleSettingsNarrow.xaml
+#	new file:   RoamingFavorite/obj/x64/Release/SimpleSettingsNarrow.xbf
+#	new file:   RoamingFavorite/obj/x64/Release/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+#	new file:   RoamingFavorite/obj/x64/Release/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+#	new file:   RoamingFavorite/obj/x64/Release/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+#	new file:   RoamingFavorite/obj/x64/Release/View/ContentViewerWithAppBar.g.cs
+#	new file:   RoamingFavorite/obj/x64/Release/View/ContentViewerWithAppBar.g.i.cs
+#	new file:   RoamingFavorite/obj/x64/Release/View/ContentViewerWithAppBar.xaml
+#	new file:   RoamingFavorite/obj/x64/Release/View/ContentViewerWithAppBar.xbf
+#	new file:   RoamingFavorite/obj/x64/Release/View/CredentialSettingsFlyout.g.cs
+#	new file:   RoamingFavorite/obj/x64/Release/View/CredentialSettingsFlyout.g.i.cs
+#	new file:   RoamingFavorite/obj/x64/Release/View/CredentialSettingsFlyout.xaml
+#	new file:   RoamingFavorite/obj/x64/Release/View/CredentialSettingsFlyout.xbf
+#	new file:   RoamingFavorite/obj/x64/Release/View/GroupedItemsPage.g.cs
+#	new file:   RoamingFavorite/obj/x64/Release/View/GroupedItemsPage.g.i.cs
+#	new file:   RoamingFavorite/obj/x64/Release/View/GroupedItemsPage.xaml
+#	new file:   RoamingFavorite/obj/x64/Release/View/GroupedItemsPage.xbf
+#	new file:   RoamingFavorite/obj/x64/Release/View/HelpPage1.g.cs
+#	new file:   RoamingFavorite/obj/x64/Release/View/HelpPage1.g.i.cs
+#	new file:   RoamingFavorite/obj/x64/Release/View/HelpPage1.xaml
+#	new file:   RoamingFavorite/obj/x64/Release/View/HelpPage1.xbf
+#	new file:   RoamingFavorite/obj/x64/Release/View/HelpPage2.g.cs
+#	new file:   RoamingFavorite/obj/x64/Release/View/HelpPage2.g.i.cs
+#	new file:   RoamingFavorite/obj/x64/Release/View/HelpPage2.xaml
+#	new file:   RoamingFavorite/obj/x64/Release/View/HelpPage2.xbf
+#	new file:   RoamingFavorite/obj/x64/Release/View/OptionsSettingFlyout.g.cs
+#	new file:   RoamingFavorite/obj/x64/Release/View/OptionsSettingFlyout.g.i.cs
+#	new file:   RoamingFavorite/obj/x64/Release/View/OptionsSettingFlyout.xaml
+#	new file:   RoamingFavorite/obj/x64/Release/View/OptionsSettingFlyout.xbf
+#	new file:   RoamingFavorite/obj/x64/Release/View/Promo/Promo_Sync.g.cs
+#	new file:   RoamingFavorite/obj/x64/Release/View/Promo/Promo_Sync.g.i.cs
+#	new file:   RoamingFavorite/obj/x64/Release/View/Promo/Promo_Sync.xaml
+#	new file:   RoamingFavorite/obj/x64/Release/View/Promo/Promo_Sync.xbf
+#	new file:   RoamingFavorite/obj/x64/Release/View/SearchResultsPage.g.cs
+#	new file:   RoamingFavorite/obj/x64/Release/View/SearchResultsPage.g.i.cs
+#	new file:   RoamingFavorite/obj/x64/Release/View/SearchResultsPage.xaml
+#	new file:   RoamingFavorite/obj/x64/Release/View/SearchResultsPage.xbf
+#	new file:   RoamingFavorite/obj/x64/Release/View/SelectFolderUserControl.g.cs
+#	new file:   RoamingFavorite/obj/x64/Release/View/SelectFolderUserControl.g.i.cs
+#	new file:   RoamingFavorite/obj/x64/Release/View/SelectFolderUserControl.xaml
+#	new file:   RoamingFavorite/obj/x64/Release/View/SelectFolderUserControl.xbf
+#	new file:   RoamingFavorite/obj/x64/Release/View/ShareFavorite.g.cs
+#	new file:   RoamingFavorite/obj/x64/Release/View/ShareFavorite.g.i.cs
+#	new file:   RoamingFavorite/obj/x64/Release/View/ShareFavorite.xaml
+#	new file:   RoamingFavorite/obj/x64/Release/View/ShareFavorite.xbf
+#	new file:   RoamingFavorite/obj/x64/Release/View/ShareTargetFav.g.cs
+#	new file:   RoamingFavorite/obj/x64/Release/View/ShareTargetFav.g.i.cs
+#	new file:   RoamingFavorite/obj/x64/Release/View/ShareTargetFav.xaml
+#	new file:   RoamingFavorite/obj/x64/Release/View/ShareTargetFav.xbf
+#	new file:   RoamingFavorite/obj/x64/Release/XamlSaveStateFile.xml
+#	new file:   RoamingFavorite/obj/x64/Release/XamlTypeInfo.g.cs
+#	new file:   RoamingFavorite/obj/x64/Release/_pkginfo.txt
+#	new file:   RoamingFavorite/obj/x64/Release/intermediatexaml/RoamingFavorite.exe
+#	new file:   RoamingFavorite/obj/x64/Release/intermediatexaml/RoamingFavorite.pdb
+#	new file:   RoamingFavorite/obj/x64/Release/layout.resfiles
+#	new file:   RoamingFavorite/obj/x64/Release/layout.resfiles.intermediate
+#	new file:   RoamingFavorite/obj/x64/Release/package.map.txt
+#	new file:   RoamingFavorite/obj/x64/Release/pri.resfiles
+#	new file:   RoamingFavorite/obj/x64/Release/pri.resfiles.intermediate
+#	new file:   RoamingFavorite/obj/x64/Release/priconfig.xml
+#	new file:   RoamingFavorite/obj/x64/Release/priconfig.xml.intermediate
+#	new file:   RoamingFavorite/obj/x64/Release/qualifiers.txt
+#	new file:   RoamingFavorite/obj/x64/Release/qualifiers.txt.intermediate
+#	new file:   RoamingFavorite/obj/x64/Release/resources.resfiles
+#	new file:   RoamingFavorite/obj/x64/Release/resources.resfiles.intermediate
+#	new file:   RoamingFavorite/obj/x86/Debug/App.g.cs
+#	new file:   RoamingFavorite/obj/x86/Debug/App.g.i.cs
+#	new file:   RoamingFavorite/obj/x86/Debug/App.xaml
+#	new file:   RoamingFavorite/obj/x86/Debug/App.xbf
+#	new file:   RoamingFavorite/obj/x86/Debug/Common/StandardStyles.g.cs
+#	new file:   RoamingFavorite/obj/x86/Debug/Common/StandardStyles.g.i.cs
+#	new file:   RoamingFavorite/obj/x86/Debug/Common/StandardStyles.xaml
+#	new file:   RoamingFavorite/obj/x86/Debug/Common/StandardStyles.xbf
+#	new file:   RoamingFavorite/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	new file:   RoamingFavorite/obj/x86/Debug/MultipleQualifiersPerDimensionFound.txt
+#	new file:   RoamingFavorite/obj/x86/Debug/ProjectArchitectures.txt
+#	new file:   RoamingFavorite/obj/x86/Debug/RoamingFavorite.csproj.FileListAbsolute.txt
+#	new file:   RoamingFavorite/obj/x86/Debug/RoamingFavorite.csproj.GenerateResource.Cache
+#	new file:   RoamingFavorite/obj/x86/Debug/RoamingFavorite.exe
+#	new file:   RoamingFavorite/obj/x86/Debug/RoamingFavorite.pdb
+#	new file:   RoamingFavorite/obj/x86/Debug/SimpleSettingsNarrow.g.cs
+#	new file:   RoamingFavorite/obj/x86/Debug/SimpleSettingsNarrow.g.i.cs
+#	new file:   RoamingFavorite/obj/x86/Debug/SimpleSettingsNarrow.xaml
+#	new file:   RoamingFavorite/obj/x86/Debug/SimpleSettingsNarrow.xbf
+#	new file:   RoamingFavorite/obj/x86/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+#	new file:   RoamingFavorite/obj/x86/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+#	new file:   RoamingFavorite/obj/x86/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+#	new file:   RoamingFavorite/obj/x86/Debug/View/ContentViewerWithAppBar.g.cs
+#	new file:   RoamingFavorite/obj/x86/Debug/View/ContentViewerWithAppBar.g.i.cs
+#	new file:   RoamingFavorite/obj/x86/Debug/View/ContentViewerWithAppBar.xaml
+#	new file:   RoamingFavorite/obj/x86/Debug/View/ContentViewerWithAppBar.xbf
+#	new file:   RoamingFavorite/obj/x86/Debug/View/CredentialSettingsFlyout.g.cs
+#	new file:   RoamingFavorite/obj/x86/Debug/View/CredentialSettingsFlyout.g.i.cs
+#	new file:   RoamingFavorite/obj/x86/Debug/View/CredentialSettingsFlyout.xaml
+#	new file:   RoamingFavorite/obj/x86/Debug/View/CredentialSettingsFlyout.xbf
+#	new file:   RoamingFavorite/obj/x86/Debug/View/GroupedItemsPage.g.cs
+#	new file:   RoamingFavorite/obj/x86/Debug/View/GroupedItemsPage.g.i.cs
+#	new file:   RoamingFavorite/obj/x86/Debug/View/GroupedItemsPage.xaml
+#	new file:   RoamingFavorite/obj/x86/Debug/View/GroupedItemsPage.xbf
+#	new file:   RoamingFavorite/obj/x86/Debug/View/ShareFavorite.g.cs
+#	new file:   RoamingFavorite/obj/x86/Debug/View/ShareFavorite.g.i.cs
+#	new file:   RoamingFavorite/obj/x86/Debug/View/ShareFavorite.xaml
+#	new file:   RoamingFavorite/obj/x86/Debug/View/ShareFavorite.xbf
+#	new file:   RoamingFavorite/obj/x86/Debug/View/ShareTargetFav.g.cs
+#	new file:   RoamingFavorite/obj/x86/Debug/View/ShareTargetFav.g.i.cs
+#	new file:   RoamingFavorite/obj/x86/Debug/View/ShareTargetFav.xaml
+#	new file:   RoamingFavorite/obj/x86/Debug/View/ShareTargetFav.xbf
+#	new file:   RoamingFavorite/obj/x86/Debug/XamlSaveStateFile.xml
+#	new file:   RoamingFavorite/obj/x86/Debug/XamlTypeInfo.g.cs
+#	new file:   RoamingFavorite/obj/x86/Debug/intermediatexaml/RoamingFavorite.exe
+#	new file:   RoamingFavorite/obj/x86/Debug/intermediatexaml/RoamingFavorite.pdb
+#	new file:   RoamingFavorite/obj/x86/Debug/layout.resfiles
+#	new file:   RoamingFavorite/obj/x86/Debug/layout.resfiles.intermediate
+#	new file:   RoamingFavorite/obj/x86/Debug/pri.resfiles
+#	new file:   RoamingFavorite/obj/x86/Debug/pri.resfiles.intermediate
+#	new file:   RoamingFavorite/obj/x86/Debug/priconfig.xml
+#	new file:   RoamingFavorite/obj/x86/Debug/priconfig.xml.intermediate
+#	new file:   RoamingFavorite/obj/x86/Debug/qualifiers.txt
+#	new file:   RoamingFavorite/obj/x86/Debug/qualifiers.txt.intermediate
+#	new file:   RoamingFavorite/obj/x86/Debug/resources.resfiles
+#	new file:   RoamingFavorite/obj/x86/Debug/resources.resfiles.intermediate
+#	new file:   RoamingFavorite/obj/x86/Release/App.g.cs
+#	new file:   RoamingFavorite/obj/x86/Release/App.g.i.cs
+#	new file:   RoamingFavorite/obj/x86/Release/App.xaml
+#	new file:   RoamingFavorite/obj/x86/Release/App.xbf
+#	new file:   RoamingFavorite/obj/x86/Release/Common/StandardStyles.g.cs
+#	new file:   RoamingFavorite/obj/x86/Release/Common/StandardStyles.g.i.cs
+#	new file:   RoamingFavorite/obj/x86/Release/Common/StandardStyles.xaml
+#	new file:   RoamingFavorite/obj/x86/Release/Common/StandardStyles.xbf
+#	new file:   RoamingFavorite/obj/x86/Release/DesignTimeResolveAssemblyReferencesInput.cache
+#	new file:   RoamingFavorite/obj/x86/Release/MultipleQualifiersPerDimensionFound.txt
+#	new file:   RoamingFavorite/obj/x86/Release/ProjectArchitectures.txt
+#	new file:   RoamingFavorite/obj/x86/Release/RoamingFavorite.csproj.FileListAbsolute.txt
+#	new file:   RoamingFavorite/obj/x86/Release/RoamingFavorite.csproj.GenerateResource.Cache
+#	new file:   RoamingFavorite/obj/x86/Release/RoamingFavorite.exe
+#	new file:   RoamingFavorite/obj/x86/Release/RoamingFavorite.pdb
+#	new file:   RoamingFavorite/obj/x86/Release/SimpleSettingsNarrow.g.cs
+#	new file:   RoamingFavorite/obj/x86/Release/SimpleSettingsNarrow.g.i.cs
+#	new file:   RoamingFavorite/obj/x86/Release/SimpleSettingsNarrow.xaml
+#	new file:   RoamingFavorite/obj/x86/Release/SimpleSettingsNarrow.xbf
+#	new file:   RoamingFavorite/obj/x86/Release/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+#	new file:   RoamingFavorite/obj/x86/Release/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+#	new file:   RoamingFavorite/obj/x86/Release/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+#	new file:   RoamingFavorite/obj/x86/Release/View/ContentViewerWithAppBar.g.cs
+#	new file:   RoamingFavorite/obj/x86/Release/View/ContentViewerWithAppBar.g.i.cs
+#	new file:   RoamingFavorite/obj/x86/Release/View/ContentViewerWithAppBar.xaml
+#	new file:   RoamingFavorite/obj/x86/Release/View/ContentViewerWithAppBar.xbf
+#	new file:   RoamingFavorite/obj/x86/Release/View/CredentialSettingsFlyout.g.cs
+#	new file:   RoamingFavorite/obj/x86/Release/View/CredentialSettingsFlyout.g.i.cs
+#	new file:   RoamingFavorite/obj/x86/Release/View/CredentialSettingsFlyout.xaml
+#	new file:   RoamingFavorite/obj/x86/Release/View/CredentialSettingsFlyout.xbf
+#	new file:   RoamingFavorite/obj/x86/Release/View/GroupedItemsPage.g.cs
+#	new file:   RoamingFavorite/obj/x86/Release/View/GroupedItemsPage.g.i.cs
+#	new file:   RoamingFavorite/obj/x86/Release/View/GroupedItemsPage.xaml
+#	new file:   RoamingFavorite/obj/x86/Release/View/GroupedItemsPage.xbf
+#	new file:   RoamingFavorite/obj/x86/Release/View/HelpPage1.g.cs
+#	new file:   RoamingFavorite/obj/x86/Release/View/HelpPage1.g.i.cs
+#	new file:   RoamingFavorite/obj/x86/Release/View/HelpPage1.xaml
+#	new file:   RoamingFavorite/obj/x86/Release/View/HelpPage1.xbf
+#	new file:   RoamingFavorite/obj/x86/Release/View/HelpPage2.g.cs
+#	new file:   RoamingFavorite/obj/x86/Release/View/HelpPage2.g.i.cs
+#	new file:   RoamingFavorite/obj/x86/Release/View/HelpPage2.xaml
+#	new file:   RoamingFavorite/obj/x86/Release/View/HelpPage2.xbf
+#	new file:   RoamingFavorite/obj/x86/Release/View/OptionsSettingFlyout.g.cs
+#	new file:   RoamingFavorite/obj/x86/Release/View/OptionsSettingFlyout.g.i.cs
+#	new file:   RoamingFavorite/obj/x86/Release/View/OptionsSettingFlyout.xaml
+#	new file:   RoamingFavorite/obj/x86/Release/View/OptionsSettingFlyout.xbf
+#	new file:   RoamingFavorite/obj/x86/Release/View/Promo/Promo_Sync.g.cs
+#	new file:   RoamingFavorite/obj/x86/Release/View/Promo/Promo_Sync.g.i.cs
+#	new file:   RoamingFavorite/obj/x86/Release/View/Promo/Promo_Sync.xaml
+#	new file:   RoamingFavorite/obj/x86/Release/View/Promo/Promo_Sync.xbf
+#	new file:   RoamingFavorite/obj/x86/Release/View/SearchResultsPage.g.cs
+#	new file:   RoamingFavorite/obj/x86/Release/View/SearchResultsPage.g.i.cs
+#	new file:   RoamingFavorite/obj/x86/Release/View/SearchResultsPage.xaml
+#	new file:   RoamingFavorite/obj/x86/Release/View/SearchResultsPage.xbf
+#	new file:   RoamingFavorite/obj/x86/Release/View/SelectFolderUserControl.g.cs
+#	new file:   RoamingFavorite/obj/x86/Release/View/SelectFolderUserControl.g.i.cs
+#	new file:   RoamingFavorite/obj/x86/Release/View/SelectFolderUserControl.xaml
+#	new file:   RoamingFavorite/obj/x86/Release/View/SelectFolderUserControl.xbf
+#	new file:   RoamingFavorite/obj/x86/Release/View/ShareFavorite.g.cs
+#	new file:   RoamingFavorite/obj/x86/Release/View/ShareFavorite.g.i.cs
+#	new file:   RoamingFavorite/obj/x86/Release/View/ShareFavorite.xaml
+#	new file:   RoamingFavorite/obj/x86/Release/View/ShareFavorite.xbf
+#	new file:   RoamingFavorite/obj/x86/Release/View/ShareTargetFav.g.cs
+#	new file:   RoamingFavorite/obj/x86/Release/View/ShareTargetFav.g.i.cs
+#	new file:   RoamingFavorite/obj/x86/Release/View/ShareTargetFav.xaml
+#	new file:   RoamingFavorite/obj/x86/Release/View/ShareTargetFav.xbf
+#	new file:   RoamingFavorite/obj/x86/Release/XamlSaveStateFile.xml
+#	new file:   RoamingFavorite/obj/x86/Release/XamlTypeInfo.g.cs
+#	new file:   RoamingFavorite/obj/x86/Release/XamlTypeInfo.g.cs.backup
+#	new file:   RoamingFavorite/obj/x86/Release/_pkginfo.txt
+#	new file:   RoamingFavorite/obj/x86/Release/intermediatexaml/RoamingFavorite.exe
+#	new file:   RoamingFavorite/obj/x86/Release/intermediatexaml/RoamingFavorite.pdb
+#	new file:   RoamingFavorite/obj/x86/Release/layout.resfiles
+#	new file:   RoamingFavorite/obj/x86/Release/layout.resfiles.intermediate
+#	new file:   RoamingFavorite/obj/x86/Release/package.map.txt
+#	new file:   RoamingFavorite/obj/x86/Release/pri.resfiles
+#	new file:   RoamingFavorite/obj/x86/Release/pri.resfiles.intermediate
+#	new file:   RoamingFavorite/obj/x86/Release/priconfig.xml
+#	new file:   RoamingFavorite/obj/x86/Release/priconfig.xml.intermediate
+#	new file:   RoamingFavorite/obj/x86/Release/qualifiers.txt
+#	new file:   RoamingFavorite/obj/x86/Release/qualifiers.txt.intermediate
+#	new file:   RoamingFavorite/obj/x86/Release/resources.resfiles
+#	new file:   RoamingFavorite/obj/x86/Release/resources.resfiles.intermediate
+#	new file:   UpgradeLog.XML
+#	new file:   UpgradeLog.htm
+#	new file:   _UpgradeReport_Files/UpgradeReport.css
+#	new file:   _UpgradeReport_Files/UpgradeReport.xslt
+#	new file:   _UpgradeReport_Files/UpgradeReport_Error.png
+#	new file:   _UpgradeReport_Files/UpgradeReport_Information.png
+#	new file:   _UpgradeReport_Files/UpgradeReport_Success.png
+#	new file:   _UpgradeReport_Files/UpgradeReport_Warning.png
+#	new file:   deleted/deleted.001
+#	new file:   deleted/index
+#	new file:   foo.txt
+#
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    RoamingFavorite/AppPackages/AppPackages.zip
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.1_x86_Test/RoamingFavorite_1.1.0.1_x86.appx
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM.appxupload
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.ps1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/cs-CZ/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/de-DE/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/en-US/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/es-ES/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/fr-FR/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/it-IT/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/ja-JP/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/ko-KR/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/pl-PL/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/pt-BR/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/ru-RU/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/tr-TR/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/zh-CN/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/Add-AppDevPackage.resources/zh-TW/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/RoamingFavorite_1.1.0.2_ARM.appx
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_ARM_Test/RoamingFavorite_1.1.0.2_ARM.cer
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64.appxupload
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.ps1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/cs-CZ/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/de-DE/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/en-US/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/es-ES/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/fr-FR/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/it-IT/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/ja-JP/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/ko-KR/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/pl-PL/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/pt-BR/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/ru-RU/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/tr-TR/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/zh-CN/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/Add-AppDevPackage.resources/zh-TW/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/RoamingFavorite_1.1.0.2_x64.appx
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x64_Test/RoamingFavorite_1.1.0.2_x64.cer
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86.appxupload
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.ps1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/cs-CZ/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/de-DE/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/en-US/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/es-ES/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/fr-FR/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/it-IT/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/ja-JP/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/ko-KR/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/pl-PL/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/pt-BR/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/ru-RU/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/tr-TR/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/zh-CN/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/Add-AppDevPackage.resources/zh-TW/Add-AppDevPackage.psd1
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/RoamingFavorite_1.1.0.2_x86.appx
+#	deleted:    RoamingFavorite/AppPackages/RoamingFavorite_1.1.0.2_x86_Test/RoamingFavorite_1.1.0.2_x86.cer
+#	deleted:    RoamingFavorite/bin/ARM/Release/App.xbf
+#	deleted:    RoamingFavorite/bin/ARM/Release/AppxManifest.xml
+#	deleted:    RoamingFavorite/bin/ARM/Release/Common/StandardStyles.xbf
+#	deleted:    RoamingFavorite/bin/ARM/Release/Microsoft.Live.dll
+#	deleted:    RoamingFavorite/bin/ARM/Release/RoamingFavorite.build.appxrecipe
+#	deleted:    RoamingFavorite/bin/ARM/Release/RoamingFavorite.exe
+#	deleted:    RoamingFavorite/bin/ARM/Release/RoamingFavorite.pdb
+#	deleted:    RoamingFavorite/bin/ARM/Release/SimpleSettingsNarrow.xbf
+#	deleted:    RoamingFavorite/bin/ARM/Release/View/ContentViewerWithAppBar.xbf
+#	deleted:    RoamingFavorite/bin/ARM/Release/View/CredentialSettingsFlyout.xbf
+#	deleted:    RoamingFavorite/bin/ARM/Release/View/GroupedItemsPage.xbf
+#	deleted:    RoamingFavorite/bin/ARM/Release/View/HelpPage1.xbf
+#	deleted:    RoamingFavorite/bin/ARM/Release/View/HelpPage2.xbf
+#	deleted:    RoamingFavorite/bin/ARM/Release/View/OptionsSettingFlyout.xbf
+#	deleted:    RoamingFavorite/bin/ARM/Release/View/Promo/Promo_Sync.xbf
+#	deleted:    RoamingFavorite/bin/ARM/Release/View/SearchResultsPage.xbf
+#	deleted:    RoamingFavorite/bin/ARM/Release/View/SelectFolderUserControl.xbf
+#	deleted:    RoamingFavorite/bin/ARM/Release/View/ShareFavorite.xbf
+#	deleted:    RoamingFavorite/bin/ARM/Release/View/ShareTargetFav.xbf
+#	deleted:    RoamingFavorite/bin/ARM/Release/resources.pri
+#	deleted:    RoamingFavorite/bin/Debug/App.xbf
+#	deleted:    RoamingFavorite/bin/Debug/AppX/App.xbf
+#	deleted:    RoamingFavorite/bin/Debug/AppX/AppxManifest.xml
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/AppView.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/BackArrow.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/BadgeLogo.scale-100.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/BrandRoamingFav_150.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/BrandRoamingFav_50.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/BrandRoamingFav_620.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/DarkGray.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/Folder-icon.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/Folder.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/FolderIcon.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/LightGray.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/Logo.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/MediumGray.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/Promo_SavePassword.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/Promo_ShareFavorite.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/Promo_Snapmode_project.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/RoamingFavlatest_flash.scale-100.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/RoamingFavorite_LandingPage.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/RoamingFavorite_sync.jpg
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/SkyDrive.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/SkyDriveSetupInstruction.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/SmallLogo.scale-100.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/SplashScreen.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/Square150x150Logo.scale-100.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/Square70x70Logo.scale-100.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/StoreLogo.scale-100.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/Wide310x150Logo.scale-100.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/background.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/bg-body.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/favorite.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Assets/html.png
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Common/StandardStyles.xbf
+#	deleted:    RoamingFavorite/bin/Debug/AppX/Microsoft.Live.dll
+#	deleted:    RoamingFavorite/bin/Debug/AppX/RoamingFavorite.exe
+#	deleted:    RoamingFavorite/bin/Debug/AppX/SimpleSettingsNarrow.xbf
+#	deleted:    RoamingFavorite/bin/Debug/AppX/View/ContentViewerWithAppBar.xbf
+#	deleted:    RoamingFavorite/bin/Debug/AppX/View/CredentialSettingsFlyout.xbf
+#	deleted:    RoamingFavorite/bin/Debug/AppX/View/GroupedItemsPage.xbf
+#	deleted:    RoamingFavorite/bin/Debug/AppX/View/HelpPage1.xbf
+#	deleted:    RoamingFavorite/bin/Debug/AppX/View/HelpPage2.xbf
+#	deleted:    RoamingFavorite/bin/Debug/AppX/View/OptionsSettingFlyout.xbf
+#	deleted:    RoamingFavorite/bin/Debug/AppX/View/Promo/Promo_Sync.xbf
+#	deleted:    RoamingFavorite/bin/Debug/AppX/View/SearchResultsPage.xbf
+#	deleted:    RoamingFavorite/bin/Debug/AppX/View/SelectFolderUserControl.xbf
+#	deleted:    RoamingFavorite/bin/Debug/AppX/View/ShareFavorite.xbf
+#	deleted:    RoamingFavorite/bin/Debug/AppX/View/ShareTargetFav.xbf
+#	deleted:    RoamingFavorite/bin/Debug/AppX/resources.pri
+#	deleted:    RoamingFavorite/bin/Debug/AppX/vs.appxrecipe
+#	deleted:    RoamingFavorite/bin/Debug/AppxManifest.xml
+#	deleted:    RoamingFavorite/bin/Debug/Common/StandardStyles.xbf
+#	deleted:    RoamingFavorite/bin/Debug/Microsoft.Live.dll
+#	deleted:    RoamingFavorite/bin/Debug/RoamingFavorite.build.appxrecipe
+#	deleted:    RoamingFavorite/bin/Debug/RoamingFavorite.exe
+#	deleted:    RoamingFavorite/bin/Debug/RoamingFavorite.pdb
+#	deleted:    RoamingFavorite/bin/Debug/SimpleSettingsNarrow.xbf
+#	deleted:    RoamingFavorite/bin/Debug/View/ContentViewerWithAppBar.xbf
+#	deleted:    RoamingFavorite/bin/Debug/View/CredentialSettingsFlyout.xbf
+#	deleted:    RoamingFavorite/bin/Debug/View/GroupedItemsPage.xbf
+#	deleted:    RoamingFavorite/bin/Debug/View/HelpPage1.xbf
+#	deleted:    RoamingFavorite/bin/Debug/View/HelpPage2.xbf
+#	deleted:    RoamingFavorite/bin/Debug/View/OptionsSettingFlyout.xbf
+#	deleted:    RoamingFavorite/bin/Debug/View/Promo/Promo_Sync.xbf
+#	deleted:    RoamingFavorite/bin/Debug/View/SearchResultsPage.xbf
+#	deleted:    RoamingFavorite/bin/Debug/View/SelectFolderUserControl.xbf
+#	deleted:    RoamingFavorite/bin/Debug/View/ShareFavorite.xbf
+#	deleted:    RoamingFavorite/bin/Debug/View/ShareTargetFav.xbf
+#	deleted:    RoamingFavorite/bin/Debug/resources.pri
+#	deleted:    RoamingFavorite/bin/Release/App.xbf
+#	deleted:    RoamingFavorite/bin/Release/AppX/App.xbf
+#	deleted:    RoamingFavorite/bin/Release/AppX/AppxManifest.xml
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/AppView.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/BackArrow.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/BadgeLogo.scale-100.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/BrandRoamingFav_150.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/BrandRoamingFav_50.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/BrandRoamingFav_620.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/DarkGray.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/Folder-icon.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/Folder.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/FolderIcon.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/LightGray.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/Logo.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/MediumGray.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/Promo_SavePassword.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/Promo_ShareFavorite.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/Promo_Snapmode_project.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/RoamingFavlatest_flash.scale-100.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/RoamingFavorite_LandingPage.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/RoamingFavorite_skydrive_install.jpg
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/RoamingFavorite_sync.jpg
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/SkyDrive.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/SkyDriveSetupInstruction.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/SmallLogo.scale-100.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/SplashScreen.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/Square150x150Logo.scale-100.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/Square70x70Logo.scale-100.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/StoreLogo.scale-100.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/Wide310x150Logo.scale-100.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/background.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/bg-body.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/favorite.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Assets/html.png
+#	deleted:    RoamingFavorite/bin/Release/AppX/Common/StandardStyles.xbf
+#	deleted:    RoamingFavorite/bin/Release/AppX/Microsoft.Live.dll
+#	deleted:    RoamingFavorite/bin/Release/AppX/RoamingFavorite.exe
+#	deleted:    RoamingFavorite/bin/Release/AppX/SimpleSettingsNarrow.xbf
+#	deleted:    RoamingFavorite/bin/Release/AppX/View/ContentViewerWithAppBar.xbf
+#	deleted:    RoamingFavorite/bin/Release/AppX/View/CredentialSettingsFlyout.xbf
+#	deleted:    RoamingFavorite/bin/Release/AppX/View/GroupedItemsPage.xbf
+#	deleted:    RoamingFavorite/bin/Release/AppX/View/HelpPage1.xbf
+#	deleted:    RoamingFavorite/bin/Release/AppX/View/HelpPage2.xbf
+#	deleted:    RoamingFavorite/bin/Release/AppX/View/OptionsSettingFlyout.xbf
+#	deleted:    RoamingFavorite/bin/Release/AppX/View/Promo/Promo_Sync.xbf
+#	deleted:    RoamingFavorite/bin/Release/AppX/View/SearchResultsPage.xbf
+#	deleted:    RoamingFavorite/bin/Release/AppX/View/SelectFolderUserControl.xbf
+#	deleted:    RoamingFavorite/bin/Release/AppX/View/ShareFavorite.xbf
+#	deleted:    RoamingFavorite/bin/Release/AppX/View/ShareTargetFav.xbf
+#	deleted:    RoamingFavorite/bin/Release/AppX/microsoft.system.package.metadata/S-1-5-21-2127521184-1604012920-1887927527-2877916.pckgdep
+#	deleted:    RoamingFavorite/bin/Release/AppX/resources.pri
+#	deleted:    RoamingFavorite/bin/Release/AppX/vs.appxrecipe
+#	deleted:    RoamingFavorite/bin/Release/AppxManifest.xml
+#	deleted:    RoamingFavorite/bin/Release/Common/StandardStyles.xbf
+#	deleted:    RoamingFavorite/bin/Release/Microsoft.Live.dll
+#	deleted:    RoamingFavorite/bin/Release/RoamingFavorite.build.appxrecipe
+#	deleted:    RoamingFavorite/bin/Release/RoamingFavorite.exe
+#	deleted:    RoamingFavorite/bin/Release/RoamingFavorite.pdb
+#	deleted:    RoamingFavorite/bin/Release/SimpleSettingsNarrow.xbf
+#	deleted:    RoamingFavorite/bin/Release/View/ContentViewerWithAppBar.xbf
+#	deleted:    RoamingFavorite/bin/Release/View/CredentialSettingsFlyout.xbf
+#	deleted:    RoamingFavorite/bin/Release/View/GroupedItemsPage.xbf
+#	deleted:    RoamingFavorite/bin/Release/View/HelpPage1.xbf
+#	deleted:    RoamingFavorite/bin/Release/View/HelpPage2.xbf
+#	deleted:    RoamingFavorite/bin/Release/View/OptionsSettingFlyout.xbf
+#	deleted:    RoamingFavorite/bin/Release/View/Promo/Promo_Sync.xbf
+#	deleted:    RoamingFavorite/bin/Release/View/SearchResultsPage.xbf
+#	deleted:    RoamingFavorite/bin/Release/View/SelectFolderUserControl.xbf
+#	deleted:    RoamingFavorite/bin/Release/View/ShareFavorite.xbf
+#	deleted:    RoamingFavorite/bin/Release/View/ShareTargetFav.xbf
+#	deleted:    RoamingFavorite/bin/Release/resources.pri
+#	deleted:    RoamingFavorite/bin/x64/Release/App.xbf
+#	deleted:    RoamingFavorite/bin/x64/Release/AppxManifest.xml
+#	deleted:    RoamingFavorite/bin/x64/Release/Common/StandardStyles.xbf
+#	deleted:    RoamingFavorite/bin/x64/Release/Microsoft.Live.dll
+#	deleted:    RoamingFavorite/bin/x64/Release/RoamingFavorite.build.appxrecipe
+#	deleted:    RoamingFavorite/bin/x64/Release/RoamingFavorite.exe
+#	deleted:    RoamingFavorite/bin/x64/Release/RoamingFavorite.pdb
+#	deleted:    RoamingFavorite/bin/x64/Release/SimpleSettingsNarrow.xbf
+#	deleted:    RoamingFavorite/bin/x64/Release/View/ContentViewerWithAppBar.xbf
+#	deleted:    RoamingFavorite/bin/x64/Release/View/CredentialSettingsFlyout.xbf
+#	deleted:    RoamingFavorite/bin/x64/Release/View/GroupedItemsPage.xbf
+#	deleted:    RoamingFavorite/bin/x64/Release/View/HelpPage1.xbf
+#	deleted:    RoamingFavorite/bin/x64/Release/View/HelpPage2.xbf
+#	deleted:    RoamingFavorite/bin/x64/Release/View/OptionsSettingFlyout.xbf
+#	deleted:    RoamingFavorite/bin/x64/Release/View/Promo/Promo_Sync.xbf
+#	deleted:    RoamingFavorite/bin/x64/Release/View/SearchResultsPage.xbf
+#	deleted:    RoamingFavorite/bin/x64/Release/View/SelectFolderUserControl.xbf
+#	deleted:    RoamingFavorite/bin/x64/Release/View/ShareFavorite.xbf
+#	deleted:    RoamingFavorite/bin/x64/Release/View/ShareTargetFav.xbf
+#	deleted:    RoamingFavorite/bin/x64/Release/resources.pri
+#	deleted:    RoamingFavorite/bin/x86/Debug/App.xbf
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/App.xbf
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/AppxManifest.xml
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/Assets/BackArrow.png
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/Assets/BrandRoamingFav_150.png
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/Assets/BrandRoamingFav_50.png
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/Assets/BrandRoamingFav_620.png
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/Assets/DarkGray.png
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/Assets/Folder-icon.png
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/Assets/Folder.png
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/Assets/FolderIcon.png
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/Assets/LightGray.png
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/Assets/Logo.png
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/Assets/MediumGray.png
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/Assets/SkyDrive.png
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/Assets/SmallLogo.png
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/Assets/SplashScreen.png
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/Assets/StoreLogo.png
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/Assets/background.png
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/Assets/bg-body.png
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/Assets/favorite.png
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/Assets/html.png
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/Common/StandardStyles.xbf
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/DataModel/XMLFile1.xml
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/Microsoft.Live.dll
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/RoamingFavorite.exe
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/SimpleSettingsNarrow.xbf
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/View/ContentViewerWithAppBar.xbf
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/View/CredentialSettingsFlyout.xbf
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/View/GroupedItemsPage.xbf
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/View/ShareFavorite.xbf
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/View/ShareTargetFav.xbf
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/resources.pri
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppX/vs.appxrecipe
+#	deleted:    RoamingFavorite/bin/x86/Debug/AppxManifest.xml
+#	deleted:    RoamingFavorite/bin/x86/Debug/Common/StandardStyles.xbf
+#	deleted:    RoamingFavorite/bin/x86/Debug/Microsoft.Live.dll
+#	deleted:    RoamingFavorite/bin/x86/Debug/RoamingFavorite.build.appxrecipe
+#	deleted:    RoamingFavorite/bin/x86/Debug/RoamingFavorite.exe
+#	deleted:    RoamingFavorite/bin/x86/Debug/RoamingFavorite.pdb
+#	deleted:    RoamingFavorite/bin/x86/Debug/SimpleSettingsNarrow.xbf
+#	deleted:    RoamingFavorite/bin/x86/Debug/View/ContentViewerWithAppBar.xbf
+#	deleted:    RoamingFavorite/bin/x86/Debug/View/CredentialSettingsFlyout.xbf
+#	deleted:    RoamingFavorite/bin/x86/Debug/View/GroupedItemsPage.xbf
+#	deleted:    RoamingFavorite/bin/x86/Debug/View/ShareFavorite.xbf
+#	deleted:    RoamingFavorite/bin/x86/Debug/View/ShareTargetFav.xbf
+#	deleted:    RoamingFavorite/bin/x86/Debug/resources.pri
+#	deleted:    RoamingFavorite/bin/x86/Release/App.xbf
+#	deleted:    RoamingFavorite/bin/x86/Release/AppxManifest.xml
+#	deleted:    RoamingFavorite/bin/x86/Release/Common/StandardStyles.xbf
+#	deleted:    RoamingFavorite/bin/x86/Release/Microsoft.Live.dll
+#	deleted:    RoamingFavorite/bin/x86/Release/RoamingFavorite.build.appxrecipe
+#	deleted:    RoamingFavorite/bin/x86/Release/RoamingFavorite.exe
+#	deleted:    RoamingFavorite/bin/x86/Release/RoamingFavorite.pdb
+#	deleted:    RoamingFavorite/bin/x86/Release/SimpleSettingsNarrow.xbf
+#	deleted:    RoamingFavorite/bin/x86/Release/View/ContentViewerWithAppBar.xbf
+#	deleted:    RoamingFavorite/bin/x86/Release/View/CredentialSettingsFlyout.xbf
+#	deleted:    RoamingFavorite/bin/x86/Release/View/GroupedItemsPage.xbf
+#	deleted:    RoamingFavorite/bin/x86/Release/View/HelpPage1.xbf
+#	deleted:    RoamingFavorite/bin/x86/Release/View/HelpPage2.xbf
+#	deleted:    RoamingFavorite/bin/x86/Release/View/OptionsSettingFlyout.xbf
+#	deleted:    RoamingFavorite/bin/x86/Release/View/Promo/Promo_Sync.xbf
+#	deleted:    RoamingFavorite/bin/x86/Release/View/SearchResultsPage.xbf
+#	deleted:    RoamingFavorite/bin/x86/Release/View/SelectFolderUserControl.xbf
+#	deleted:    RoamingFavorite/bin/x86/Release/View/ShareFavorite.xbf
+#	deleted:    RoamingFavorite/bin/x86/Release/View/ShareTargetFav.xbf
+#	deleted:    RoamingFavorite/bin/x86/Release/resources.pri
+#	deleted:    RoamingFavorite/obj/ARM/Release/App.g.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/App.g.i.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/App.xaml
+#	deleted:    RoamingFavorite/obj/ARM/Release/App.xbf
+#	deleted:    RoamingFavorite/obj/ARM/Release/Common/StandardStyles.g.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/Common/StandardStyles.g.i.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/Common/StandardStyles.xaml
+#	deleted:    RoamingFavorite/obj/ARM/Release/Common/StandardStyles.xbf
+#	deleted:    RoamingFavorite/obj/ARM/Release/DesignTimeResolveAssemblyReferencesInput.cache
+#	deleted:    RoamingFavorite/obj/ARM/Release/MultipleQualifiersPerDimensionFound.txt
+#	deleted:    RoamingFavorite/obj/ARM/Release/ProjectArchitectures.txt
+#	deleted:    RoamingFavorite/obj/ARM/Release/RoamingFavorite.csproj.FileListAbsolute.txt
+#	deleted:    RoamingFavorite/obj/ARM/Release/RoamingFavorite.csproj.GenerateResource.Cache
+#	deleted:    RoamingFavorite/obj/ARM/Release/RoamingFavorite.exe
+#	deleted:    RoamingFavorite/obj/ARM/Release/RoamingFavorite.pdb
+#	deleted:    RoamingFavorite/obj/ARM/Release/SimpleSettingsNarrow.g.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/SimpleSettingsNarrow.g.i.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/SimpleSettingsNarrow.xaml
+#	deleted:    RoamingFavorite/obj/ARM/Release/SimpleSettingsNarrow.xbf
+#	deleted:    RoamingFavorite/obj/ARM/Release/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/ContentViewerWithAppBar.g.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/ContentViewerWithAppBar.g.i.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/ContentViewerWithAppBar.xaml
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/ContentViewerWithAppBar.xbf
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/CredentialSettingsFlyout.g.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/CredentialSettingsFlyout.g.i.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/CredentialSettingsFlyout.xaml
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/CredentialSettingsFlyout.xbf
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/GroupedItemsPage.g.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/GroupedItemsPage.g.i.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/GroupedItemsPage.xaml
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/GroupedItemsPage.xbf
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/HelpPage1.g.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/HelpPage1.g.i.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/HelpPage1.xaml
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/HelpPage1.xbf
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/HelpPage2.g.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/HelpPage2.g.i.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/HelpPage2.xaml
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/HelpPage2.xbf
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/OptionsSettingFlyout.g.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/OptionsSettingFlyout.g.i.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/OptionsSettingFlyout.xaml
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/OptionsSettingFlyout.xbf
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/Promo/Promo_Sync.g.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/Promo/Promo_Sync.g.i.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/Promo/Promo_Sync.xaml
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/Promo/Promo_Sync.xbf
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/SearchResultsPage.g.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/SearchResultsPage.g.i.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/SearchResultsPage.xaml
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/SearchResultsPage.xbf
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/SelectFolderUserControl.g.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/SelectFolderUserControl.g.i.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/SelectFolderUserControl.xaml
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/SelectFolderUserControl.xbf
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/ShareFavorite.g.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/ShareFavorite.g.i.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/ShareFavorite.xaml
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/ShareFavorite.xbf
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/ShareTargetFav.g.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/ShareTargetFav.g.i.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/ShareTargetFav.xaml
+#	deleted:    RoamingFavorite/obj/ARM/Release/View/ShareTargetFav.xbf
+#	deleted:    RoamingFavorite/obj/ARM/Release/XamlSaveStateFile.xml
+#	deleted:    RoamingFavorite/obj/ARM/Release/XamlTypeInfo.g.cs
+#	deleted:    RoamingFavorite/obj/ARM/Release/_pkginfo.txt
+#	deleted:    RoamingFavorite/obj/ARM/Release/intermediatexaml/RoamingFavorite.exe
+#	deleted:    RoamingFavorite/obj/ARM/Release/intermediatexaml/RoamingFavorite.pdb
+#	deleted:    RoamingFavorite/obj/ARM/Release/layout.resfiles
+#	deleted:    RoamingFavorite/obj/ARM/Release/layout.resfiles.intermediate
+#	deleted:    RoamingFavorite/obj/ARM/Release/package.map.txt
+#	deleted:    RoamingFavorite/obj/ARM/Release/pri.resfiles
+#	deleted:    RoamingFavorite/obj/ARM/Release/pri.resfiles.intermediate
+#	deleted:    RoamingFavorite/obj/ARM/Release/priconfig.xml
+#	deleted:    RoamingFavorite/obj/ARM/Release/priconfig.xml.intermediate
+#	deleted:    RoamingFavorite/obj/ARM/Release/qualifiers.txt
+#	deleted:    RoamingFavorite/obj/ARM/Release/qualifiers.txt.intermediate
+#	deleted:    RoamingFavorite/obj/ARM/Release/resources.resfiles
+#	deleted:    RoamingFavorite/obj/ARM/Release/resources.resfiles.intermediate
+#	deleted:    RoamingFavorite/obj/Debug/App.g.cs
+#	deleted:    RoamingFavorite/obj/Debug/App.g.i.cs
+#	deleted:    RoamingFavorite/obj/Debug/App.xaml
+#	deleted:    RoamingFavorite/obj/Debug/App.xbf
+#	deleted:    RoamingFavorite/obj/Debug/Common/StandardStyles.g.cs
+#	deleted:    RoamingFavorite/obj/Debug/Common/StandardStyles.g.i.cs
+#	deleted:    RoamingFavorite/obj/Debug/Common/StandardStyles.xaml
+#	deleted:    RoamingFavorite/obj/Debug/Common/StandardStyles.xbf
+#	deleted:    RoamingFavorite/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	deleted:    RoamingFavorite/obj/Debug/MultipleQualifiersPerDimensionFound.txt
+#	deleted:    RoamingFavorite/obj/Debug/ProjectArchitectures.txt
+#	deleted:    RoamingFavorite/obj/Debug/RoamingFavorite.csproj.FileListAbsolute.txt
+#	deleted:    RoamingFavorite/obj/Debug/RoamingFavorite.csproj.GenerateResource.Cache
+#	deleted:    RoamingFavorite/obj/Debug/RoamingFavorite.exe
+#	deleted:    RoamingFavorite/obj/Debug/RoamingFavorite.pdb
+#	deleted:    RoamingFavorite/obj/Debug/SimpleSettingsNarrow.g.cs
+#	deleted:    RoamingFavorite/obj/Debug/SimpleSettingsNarrow.g.i.cs
+#	deleted:    RoamingFavorite/obj/Debug/SimpleSettingsNarrow.xaml
+#	deleted:    RoamingFavorite/obj/Debug/SimpleSettingsNarrow.xbf
+#	deleted:    RoamingFavorite/obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+#	deleted:    RoamingFavorite/obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+#	deleted:    RoamingFavorite/obj/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+#	deleted:    RoamingFavorite/obj/Debug/View/ContentViewerWithAppBar.g.cs
+#	deleted:    RoamingFavorite/obj/Debug/View/ContentViewerWithAppBar.g.i.cs
+#	deleted:    RoamingFavorite/obj/Debug/View/ContentViewerWithAppBar.xaml
+#	deleted:    RoamingFavorite/obj/Debug/View/ContentViewerWithAppBar.xbf
+#	deleted:    RoamingFavorite/obj/Debug/View/CredentialSettingsFlyout.g.cs
+#	deleted:    RoamingFavorite/obj/Debug/View/CredentialSettingsFlyout.g.i.cs
+#	deleted:    RoamingFavorite/obj/Debug/View/CredentialSettingsFlyout.xaml
+#	deleted:    RoamingFavorite/obj/Debug/View/CredentialSettingsFlyout.xbf
+#	deleted:    RoamingFavorite/obj/Debug/View/GroupedItemsPage.g.cs
+#	deleted:    RoamingFavorite/obj/Debug/View/GroupedItemsPage.g.i.cs
+#	deleted:    RoamingFavorite/obj/Debug/View/GroupedItemsPage.xaml
+#	deleted:    RoamingFavorite/obj/Debug/View/GroupedItemsPage.xbf
+#	deleted:    RoamingFavorite/obj/Debug/View/HelpPage1.g.cs
+#	deleted:    RoamingFavorite/obj/Debug/View/HelpPage1.g.i.cs
+#	deleted:    RoamingFavorite/obj/Debug/View/HelpPage1.xaml
+#	deleted:    RoamingFavorite/obj/Debug/View/HelpPage1.xbf
+#	deleted:    RoamingFavorite/obj/Debug/View/HelpPage2.g.cs
+#	deleted:    RoamingFavorite/obj/Debug/View/HelpPage2.g.i.cs
+#	deleted:    RoamingFavorite/obj/Debug/View/HelpPage2.xaml
+#	deleted:    RoamingFavorite/obj/Debug/View/HelpPage2.xbf
+#	deleted:    RoamingFavorite/obj/Debug/View/OptionsSettingFlyout.g.cs
+#	deleted:    RoamingFavorite/obj/Debug/View/OptionsSettingFlyout.g.i.cs
+#	deleted:    RoamingFavorite/obj/Debug/View/OptionsSettingFlyout.xaml
+#	deleted:    RoamingFavorite/obj/Debug/View/OptionsSettingFlyout.xbf
+#	deleted:    RoamingFavorite/obj/Debug/View/Promo/Promo_Sync.g.cs
+#	deleted:    RoamingFavorite/obj/Debug/View/Promo/Promo_Sync.g.i.cs
+#	deleted:    RoamingFavorite/obj/Debug/View/Promo/Promo_Sync.xaml
+#	deleted:    RoamingFavorite/obj/Debug/View/Promo/Promo_Sync.xbf
+#	deleted:    RoamingFavorite/obj/Debug/View/SearchResultsPage.g.cs
+#	deleted:    RoamingFavorite/obj/Debug/View/SearchResultsPage.g.i.cs
+#	deleted:    RoamingFavorite/obj/Debug/View/SearchResultsPage.xaml
+#	deleted:    RoamingFavorite/obj/Debug/View/SearchResultsPage.xbf
+#	deleted:    RoamingFavorite/obj/Debug/View/SelectFolderUserControl.g.cs
+#	deleted:    RoamingFavorite/obj/Debug/View/SelectFolderUserControl.g.i.cs
+#	deleted:    RoamingFavorite/obj/Debug/View/SelectFolderUserControl.xaml
+#	deleted:    RoamingFavorite/obj/Debug/View/SelectFolderUserControl.xbf
+#	deleted:    RoamingFavorite/obj/Debug/View/ShareFavorite.g.cs
+#	deleted:    RoamingFavorite/obj/Debug/View/ShareFavorite.g.i.cs
+#	deleted:    RoamingFavorite/obj/Debug/View/ShareFavorite.xaml
+#	deleted:    RoamingFavorite/obj/Debug/View/ShareFavorite.xbf
+#	deleted:    RoamingFavorite/obj/Debug/View/ShareTargetFav.g.cs
+#	deleted:    RoamingFavorite/obj/Debug/View/ShareTargetFav.g.i.cs
+#	deleted:    RoamingFavorite/obj/Debug/View/ShareTargetFav.xaml
+#	deleted:    RoamingFavorite/obj/Debug/View/ShareTargetFav.xbf
+#	deleted:    RoamingFavorite/obj/Debug/XamlSaveStateFile.xml
+#	deleted:    RoamingFavorite/obj/Debug/XamlTypeInfo.g.cs
+#	deleted:    RoamingFavorite/obj/Debug/intermediatexaml/RoamingFavorite.exe
+#	deleted:    RoamingFavorite/obj/Debug/intermediatexaml/RoamingFavorite.pdb
+#	deleted:    RoamingFavorite/obj/Debug/layout.resfiles
+#	deleted:    RoamingFavorite/obj/Debug/layout.resfiles.intermediate
+#	deleted:    RoamingFavorite/obj/Debug/pri.resfiles
+#	deleted:    RoamingFavorite/obj/Debug/pri.resfiles.intermediate
+#	deleted:    RoamingFavorite/obj/Debug/priconfig.xml
+#	deleted:    RoamingFavorite/obj/Debug/priconfig.xml.intermediate
+#	deleted:    RoamingFavorite/obj/Debug/qualifiers.txt
+#	deleted:    RoamingFavorite/obj/Debug/qualifiers.txt.intermediate
+#	deleted:    RoamingFavorite/obj/Debug/resources.resfiles
+#	deleted:    RoamingFavorite/obj/Debug/resources.resfiles.intermediate
+#	deleted:    RoamingFavorite/obj/Release/App.g.cs
+#	deleted:    RoamingFavorite/obj/Release/App.g.i.cs
+#	deleted:    RoamingFavorite/obj/Release/App.xaml
+#	deleted:    RoamingFavorite/obj/Release/App.xbf
+#	deleted:    RoamingFavorite/obj/Release/Common/StandardStyles.g.cs
+#	deleted:    RoamingFavorite/obj/Release/Common/StandardStyles.g.i.cs
+#	deleted:    RoamingFavorite/obj/Release/Common/StandardStyles.xaml
+#	deleted:    RoamingFavorite/obj/Release/Common/StandardStyles.xbf
+#	deleted:    RoamingFavorite/obj/Release/DesignTimeResolveAssemblyReferencesInput.cache
+#	deleted:    RoamingFavorite/obj/Release/MultipleQualifiersPerDimensionFound.txt
+#	deleted:    RoamingFavorite/obj/Release/ProjectArchitectures.txt
+#	deleted:    RoamingFavorite/obj/Release/RoamingFavorite.csproj.FileListAbsolute.txt
+#	deleted:    RoamingFavorite/obj/Release/RoamingFavorite.csproj.GenerateResource.Cache
+#	deleted:    RoamingFavorite/obj/Release/RoamingFavorite.exe
+#	deleted:    RoamingFavorite/obj/Release/RoamingFavorite.pdb
+#	deleted:    RoamingFavorite/obj/Release/SimpleSettingsNarrow.g.cs
+#	deleted:    RoamingFavorite/obj/Release/SimpleSettingsNarrow.g.i.cs
+#	deleted:    RoamingFavorite/obj/Release/SimpleSettingsNarrow.xaml
+#	deleted:    RoamingFavorite/obj/Release/SimpleSettingsNarrow.xbf
+#	deleted:    RoamingFavorite/obj/Release/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+#	deleted:    RoamingFavorite/obj/Release/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+#	deleted:    RoamingFavorite/obj/Release/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+#	deleted:    RoamingFavorite/obj/Release/View/ContentViewerWithAppBar.g.cs
+#	deleted:    RoamingFavorite/obj/Release/View/ContentViewerWithAppBar.g.i.cs
+#	deleted:    RoamingFavorite/obj/Release/View/ContentViewerWithAppBar.xaml
+#	deleted:    RoamingFavorite/obj/Release/View/ContentViewerWithAppBar.xbf
+#	deleted:    RoamingFavorite/obj/Release/View/CredentialSettingsFlyout.g.cs
+#	deleted:    RoamingFavorite/obj/Release/View/CredentialSettingsFlyout.g.i.cs
+#	deleted:    RoamingFavorite/obj/Release/View/CredentialSettingsFlyout.xaml
+#	deleted:    RoamingFavorite/obj/Release/View/CredentialSettingsFlyout.xbf
+#	deleted:    RoamingFavorite/obj/Release/View/GroupedItemsPage.g.cs
+#	deleted:    RoamingFavorite/obj/Release/View/GroupedItemsPage.g.i.cs
+#	deleted:    RoamingFavorite/obj/Release/View/GroupedItemsPage.xaml
+#	deleted:    RoamingFavorite/obj/Release/View/GroupedItemsPage.xbf
+#	deleted:    RoamingFavorite/obj/Release/View/HelpPage1.g.cs
+#	deleted:    RoamingFavorite/obj/Release/View/HelpPage1.g.i.cs
+#	deleted:    RoamingFavorite/obj/Release/View/HelpPage1.xaml
+#	deleted:    RoamingFavorite/obj/Release/View/HelpPage1.xbf
+#	deleted:    RoamingFavorite/obj/Release/View/HelpPage2.g.cs
+#	deleted:    RoamingFavorite/obj/Release/View/HelpPage2.g.i.cs
+#	deleted:    RoamingFavorite/obj/Release/View/HelpPage2.xaml
+#	deleted:    RoamingFavorite/obj/Release/View/HelpPage2.xbf
+#	deleted:    RoamingFavorite/obj/Release/View/OptionsSettingFlyout.g.cs
+#	deleted:    RoamingFavorite/obj/Release/View/OptionsSettingFlyout.g.i.cs
+#	deleted:    RoamingFavorite/obj/Release/View/OptionsSettingFlyout.xaml
+#	deleted:    RoamingFavorite/obj/Release/View/OptionsSettingFlyout.xbf
+#	deleted:    RoamingFavorite/obj/Release/View/Promo/Promo_Sync.g.cs
+#	deleted:    RoamingFavorite/obj/Release/View/Promo/Promo_Sync.g.i.cs
+#	deleted:    RoamingFavorite/obj/Release/View/Promo/Promo_Sync.xaml
+#	deleted:    RoamingFavorite/obj/Release/View/Promo/Promo_Sync.xbf
+#	deleted:    RoamingFavorite/obj/Release/View/SearchResultsPage.g.cs
+#	deleted:    RoamingFavorite/obj/Release/View/SearchResultsPage.g.i.cs
+#	deleted:    RoamingFavorite/obj/Release/View/SearchResultsPage.xaml
+#	deleted:    RoamingFavorite/obj/Release/View/SearchResultsPage.xbf
+#	deleted:    RoamingFavorite/obj/Release/View/SelectFolderUserControl.g.cs
+#	deleted:    RoamingFavorite/obj/Release/View/SelectFolderUserControl.g.i.cs
+#	deleted:    RoamingFavorite/obj/Release/View/SelectFolderUserControl.xaml
+#	deleted:    RoamingFavorite/obj/Release/View/SelectFolderUserControl.xbf
+#	deleted:    RoamingFavorite/obj/Release/View/ShareFavorite.g.cs
+#	deleted:    RoamingFavorite/obj/Release/View/ShareFavorite.g.i.cs
+#	deleted:    RoamingFavorite/obj/Release/View/ShareFavorite.xaml
+#	deleted:    RoamingFavorite/obj/Release/View/ShareFavorite.xbf
+#	deleted:    RoamingFavorite/obj/Release/View/ShareTargetFav.g.cs
+#	deleted:    RoamingFavorite/obj/Release/View/ShareTargetFav.g.i.cs
+#	deleted:    RoamingFavorite/obj/Release/View/ShareTargetFav.xaml
+#	deleted:    RoamingFavorite/obj/Release/View/ShareTargetFav.xbf
+#	deleted:    RoamingFavorite/obj/Release/XamlSaveStateFile.xml
+#	deleted:    RoamingFavorite/obj/Release/XamlTypeInfo.g.cs
+#	deleted:    RoamingFavorite/obj/Release/XamlTypeInfo.g.cs.backup
+#	deleted:    RoamingFavorite/obj/Release/intermediatexaml/RoamingFavorite.exe
+#	deleted:    RoamingFavorite/obj/Release/intermediatexaml/RoamingFavorite.pdb
+#	deleted:    RoamingFavorite/obj/Release/layout.resfiles
+#	deleted:    RoamingFavorite/obj/Release/layout.resfiles.intermediate
+#	deleted:    RoamingFavorite/obj/Release/pri.resfiles
+#	deleted:    RoamingFavorite/obj/Release/pri.resfiles.intermediate
+#	deleted:    RoamingFavorite/obj/Release/priconfig.xml
+#	deleted:    RoamingFavorite/obj/Release/priconfig.xml.intermediate
+#	deleted:    RoamingFavorite/obj/Release/qualifiers.txt
+#	deleted:    RoamingFavorite/obj/Release/qualifiers.txt.intermediate
+#	deleted:    RoamingFavorite/obj/Release/resources.resfiles
+#	deleted:    RoamingFavorite/obj/Release/resources.resfiles.intermediate
+#	deleted:    RoamingFavorite/obj/x64/Release/App.g.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/App.g.i.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/App.xaml
+#	deleted:    RoamingFavorite/obj/x64/Release/App.xbf
+#	deleted:    RoamingFavorite/obj/x64/Release/Common/StandardStyles.g.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/Common/StandardStyles.g.i.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/Common/StandardStyles.xaml
+#	deleted:    RoamingFavorite/obj/x64/Release/Common/StandardStyles.xbf
+#	deleted:    RoamingFavorite/obj/x64/Release/DesignTimeResolveAssemblyReferencesInput.cache
+#	deleted:    RoamingFavorite/obj/x64/Release/MultipleQualifiersPerDimensionFound.txt
+#	deleted:    RoamingFavorite/obj/x64/Release/ProjectArchitectures.txt
+#	deleted:    RoamingFavorite/obj/x64/Release/RoamingFavorite.csproj.FileListAbsolute.txt
+#	deleted:    RoamingFavorite/obj/x64/Release/RoamingFavorite.csproj.GenerateResource.Cache
+#	deleted:    RoamingFavorite/obj/x64/Release/RoamingFavorite.exe
+#	deleted:    RoamingFavorite/obj/x64/Release/RoamingFavorite.pdb
+#	deleted:    RoamingFavorite/obj/x64/Release/SimpleSettingsNarrow.g.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/SimpleSettingsNarrow.g.i.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/SimpleSettingsNarrow.xaml
+#	deleted:    RoamingFavorite/obj/x64/Release/SimpleSettingsNarrow.xbf
+#	deleted:    RoamingFavorite/obj/x64/Release/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/View/ContentViewerWithAppBar.g.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/View/ContentViewerWithAppBar.g.i.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/View/ContentViewerWithAppBar.xaml
+#	deleted:    RoamingFavorite/obj/x64/Release/View/ContentViewerWithAppBar.xbf
+#	deleted:    RoamingFavorite/obj/x64/Release/View/CredentialSettingsFlyout.g.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/View/CredentialSettingsFlyout.g.i.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/View/CredentialSettingsFlyout.xaml
+#	deleted:    RoamingFavorite/obj/x64/Release/View/CredentialSettingsFlyout.xbf
+#	deleted:    RoamingFavorite/obj/x64/Release/View/GroupedItemsPage.g.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/View/GroupedItemsPage.g.i.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/View/GroupedItemsPage.xaml
+#	deleted:    RoamingFavorite/obj/x64/Release/View/GroupedItemsPage.xbf
+#	deleted:    RoamingFavorite/obj/x64/Release/View/HelpPage1.g.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/View/HelpPage1.g.i.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/View/HelpPage1.xaml
+#	deleted:    RoamingFavorite/obj/x64/Release/View/HelpPage1.xbf
+#	deleted:    RoamingFavorite/obj/x64/Release/View/HelpPage2.g.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/View/HelpPage2.g.i.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/View/HelpPage2.xaml
+#	deleted:    RoamingFavorite/obj/x64/Release/View/HelpPage2.xbf
+#	deleted:    RoamingFavorite/obj/x64/Release/View/OptionsSettingFlyout.g.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/View/OptionsSettingFlyout.g.i.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/View/OptionsSettingFlyout.xaml
+#	deleted:    RoamingFavorite/obj/x64/Release/View/OptionsSettingFlyout.xbf
+#	deleted:    RoamingFavorite/obj/x64/Release/View/Promo/Promo_Sync.g.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/View/Promo/Promo_Sync.g.i.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/View/Promo/Promo_Sync.xaml
+#	deleted:    RoamingFavorite/obj/x64/Release/View/Promo/Promo_Sync.xbf
+#	deleted:    RoamingFavorite/obj/x64/Release/View/SearchResultsPage.g.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/View/SearchResultsPage.g.i.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/View/SearchResultsPage.xaml
+#	deleted:    RoamingFavorite/obj/x64/Release/View/SearchResultsPage.xbf
+#	deleted:    RoamingFavorite/obj/x64/Release/View/SelectFolderUserControl.g.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/View/SelectFolderUserControl.g.i.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/View/SelectFolderUserControl.xaml
+#	deleted:    RoamingFavorite/obj/x64/Release/View/SelectFolderUserControl.xbf
+#	deleted:    RoamingFavorite/obj/x64/Release/View/ShareFavorite.g.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/View/ShareFavorite.g.i.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/View/ShareFavorite.xaml
+#	deleted:    RoamingFavorite/obj/x64/Release/View/ShareFavorite.xbf
+#	deleted:    RoamingFavorite/obj/x64/Release/View/ShareTargetFav.g.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/View/ShareTargetFav.g.i.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/View/ShareTargetFav.xaml
+#	deleted:    RoamingFavorite/obj/x64/Release/View/ShareTargetFav.xbf
+#	deleted:    RoamingFavorite/obj/x64/Release/XamlSaveStateFile.xml
+#	deleted:    RoamingFavorite/obj/x64/Release/XamlTypeInfo.g.cs
+#	deleted:    RoamingFavorite/obj/x64/Release/_pkginfo.txt
+#	deleted:    RoamingFavorite/obj/x64/Release/intermediatexaml/RoamingFavorite.exe
+#	deleted:    RoamingFavorite/obj/x64/Release/intermediatexaml/RoamingFavorite.pdb
+#	deleted:    RoamingFavorite/obj/x64/Release/layout.resfiles
+#	deleted:    RoamingFavorite/obj/x64/Release/layout.resfiles.intermediate
+#	deleted:    RoamingFavorite/obj/x64/Release/package.map.txt
+#	deleted:    RoamingFavorite/obj/x64/Release/pri.resfiles
+#	deleted:    RoamingFavorite/obj/x64/Release/pri.resfiles.intermediate
+#	deleted:    RoamingFavorite/obj/x64/Release/priconfig.xml
+#	deleted:    RoamingFavorite/obj/x64/Release/priconfig.xml.intermediate
+#	deleted:    RoamingFavorite/obj/x64/Release/qualifiers.txt
+#	deleted:    RoamingFavorite/obj/x64/Release/qualifiers.txt.intermediate
+#	deleted:    RoamingFavorite/obj/x64/Release/resources.resfiles
+#	deleted:    RoamingFavorite/obj/x64/Release/resources.resfiles.intermediate
+#	deleted:    RoamingFavorite/obj/x86/Debug/App.g.cs
+#	deleted:    RoamingFavorite/obj/x86/Debug/App.g.i.cs
+#	deleted:    RoamingFavorite/obj/x86/Debug/App.xaml
+#	deleted:    RoamingFavorite/obj/x86/Debug/App.xbf
+#	deleted:    RoamingFavorite/obj/x86/Debug/Common/StandardStyles.g.cs
+#	deleted:    RoamingFavorite/obj/x86/Debug/Common/StandardStyles.g.i.cs
+#	deleted:    RoamingFavorite/obj/x86/Debug/Common/StandardStyles.xaml
+#	deleted:    RoamingFavorite/obj/x86/Debug/Common/StandardStyles.xbf
+#	deleted:    RoamingFavorite/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	deleted:    RoamingFavorite/obj/x86/Debug/MultipleQualifiersPerDimensionFound.txt
+#	deleted:    RoamingFavorite/obj/x86/Debug/ProjectArchitectures.txt
+#	deleted:    RoamingFavorite/obj/x86/Debug/RoamingFavorite.csproj.FileListAbsolute.txt
+#	deleted:    RoamingFavorite/obj/x86/Debug/RoamingFavorite.csproj.GenerateResource.Cache
+#	deleted:    RoamingFavorite/obj/x86/Debug/RoamingFavorite.exe
+#	deleted:    RoamingFavorite/obj/x86/Debug/RoamingFavorite.pdb
+#	deleted:    RoamingFavorite/obj/x86/Debug/SimpleSettingsNarrow.g.cs
+#	deleted:    RoamingFavorite/obj/x86/Debug/SimpleSettingsNarrow.g.i.cs
+#	deleted:    RoamingFavorite/obj/x86/Debug/SimpleSettingsNarrow.xaml
+#	deleted:    RoamingFavorite/obj/x86/Debug/SimpleSettingsNarrow.xbf
+#	deleted:    RoamingFavorite/obj/x86/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+#	deleted:    RoamingFavorite/obj/x86/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+#	deleted:    RoamingFavorite/obj/x86/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+#	deleted:    RoamingFavorite/obj/x86/Debug/View/ContentViewerWithAppBar.g.cs
+#	deleted:    RoamingFavorite/obj/x86/Debug/View/ContentViewerWithAppBar.g.i.cs
+#	deleted:    RoamingFavorite/obj/x86/Debug/View/ContentViewerWithAppBar.xaml
+#	deleted:    RoamingFavorite/obj/x86/Debug/View/ContentViewerWithAppBar.xbf
+#	deleted:    RoamingFavorite/obj/x86/Debug/View/CredentialSettingsFlyout.g.cs
+#	deleted:    RoamingFavorite/obj/x86/Debug/View/CredentialSettingsFlyout.g.i.cs
+#	deleted:    RoamingFavorite/obj/x86/Debug/View/CredentialSettingsFlyout.xaml
+#	deleted:    RoamingFavorite/obj/x86/Debug/View/CredentialSettingsFlyout.xbf
+#	deleted:    RoamingFavorite/obj/x86/Debug/View/GroupedItemsPage.g.cs
+#	deleted:    RoamingFavorite/obj/x86/Debug/View/GroupedItemsPage.g.i.cs
+#	deleted:    RoamingFavorite/obj/x86/Debug/View/GroupedItemsPage.xaml
+#	deleted:    RoamingFavorite/obj/x86/Debug/View/GroupedItemsPage.xbf
+#	deleted:    RoamingFavorite/obj/x86/Debug/View/ShareFavorite.g.cs
+#	deleted:    RoamingFavorite/obj/x86/Debug/View/ShareFavorite.g.i.cs
+#	deleted:    RoamingFavorite/obj/x86/Debug/View/ShareFavorite.xaml
+#	deleted:    RoamingFavorite/obj/x86/Debug/View/ShareFavorite.xbf
+#	deleted:    RoamingFavorite/obj/x86/Debug/View/ShareTargetFav.g.cs
+#	deleted:    RoamingFavorite/obj/x86/Debug/View/ShareTargetFav.g.i.cs
+#	deleted:    RoamingFavorite/obj/x86/Debug/View/ShareTargetFav.xaml
+#	deleted:    RoamingFavorite/obj/x86/Debug/View/ShareTargetFav.xbf
+#	deleted:    RoamingFavorite/obj/x86/Debug/XamlSaveStateFile.xml
+#	deleted:    RoamingFavorite/obj/x86/Debug/XamlTypeInfo.g.cs
+#	deleted:    RoamingFavorite/obj/x86/Debug/intermediatexaml/RoamingFavorite.exe
+#	deleted:    RoamingFavorite/obj/x86/Debug/intermediatexaml/RoamingFavorite.pdb
+#	deleted:    RoamingFavorite/obj/x86/Debug/layout.resfiles
+#	deleted:    RoamingFavorite/obj/x86/Debug/layout.resfiles.intermediate
+#	deleted:    RoamingFavorite/obj/x86/Debug/pri.resfiles
+#	deleted:    RoamingFavorite/obj/x86/Debug/pri.resfiles.intermediate
+#	deleted:    RoamingFavorite/obj/x86/Debug/priconfig.xml
+#	deleted:    RoamingFavorite/obj/x86/Debug/priconfig.xml.intermediate
+#	deleted:    RoamingFavorite/obj/x86/Debug/qualifiers.txt
+#	deleted:    RoamingFavorite/obj/x86/Debug/qualifiers.txt.intermediate
+#	deleted:    RoamingFavorite/obj/x86/Debug/resources.resfiles
+#	deleted:    RoamingFavorite/obj/x86/Debug/resources.resfiles.intermediate
+#	deleted:    RoamingFavorite/obj/x86/Release/App.g.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/App.g.i.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/App.xaml
+#	deleted:    RoamingFavorite/obj/x86/Release/App.xbf
+#	deleted:    RoamingFavorite/obj/x86/Release/Common/StandardStyles.g.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/Common/StandardStyles.g.i.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/Common/StandardStyles.xaml
+#	deleted:    RoamingFavorite/obj/x86/Release/Common/StandardStyles.xbf
+#	deleted:    RoamingFavorite/obj/x86/Release/DesignTimeResolveAssemblyReferencesInput.cache
+#	deleted:    RoamingFavorite/obj/x86/Release/MultipleQualifiersPerDimensionFound.txt
+#	deleted:    RoamingFavorite/obj/x86/Release/ProjectArchitectures.txt
+#	deleted:    RoamingFavorite/obj/x86/Release/RoamingFavorite.csproj.FileListAbsolute.txt
+#	deleted:    RoamingFavorite/obj/x86/Release/RoamingFavorite.csproj.GenerateResource.Cache
+#	deleted:    RoamingFavorite/obj/x86/Release/RoamingFavorite.exe
+#	deleted:    RoamingFavorite/obj/x86/Release/RoamingFavorite.pdb
+#	deleted:    RoamingFavorite/obj/x86/Release/SimpleSettingsNarrow.g.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/SimpleSettingsNarrow.g.i.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/SimpleSettingsNarrow.xaml
+#	deleted:    RoamingFavorite/obj/x86/Release/SimpleSettingsNarrow.xbf
+#	deleted:    RoamingFavorite/obj/x86/Release/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/View/ContentViewerWithAppBar.g.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/View/ContentViewerWithAppBar.g.i.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/View/ContentViewerWithAppBar.xaml
+#	deleted:    RoamingFavorite/obj/x86/Release/View/ContentViewerWithAppBar.xbf
+#	deleted:    RoamingFavorite/obj/x86/Release/View/CredentialSettingsFlyout.g.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/View/CredentialSettingsFlyout.g.i.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/View/CredentialSettingsFlyout.xaml
+#	deleted:    RoamingFavorite/obj/x86/Release/View/CredentialSettingsFlyout.xbf
+#	deleted:    RoamingFavorite/obj/x86/Release/View/GroupedItemsPage.g.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/View/GroupedItemsPage.g.i.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/View/GroupedItemsPage.xaml
+#	deleted:    RoamingFavorite/obj/x86/Release/View/GroupedItemsPage.xbf
+#	deleted:    RoamingFavorite/obj/x86/Release/View/HelpPage1.g.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/View/HelpPage1.g.i.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/View/HelpPage1.xaml
+#	deleted:    RoamingFavorite/obj/x86/Release/View/HelpPage1.xbf
+#	deleted:    RoamingFavorite/obj/x86/Release/View/HelpPage2.g.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/View/HelpPage2.g.i.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/View/HelpPage2.xaml
+#	deleted:    RoamingFavorite/obj/x86/Release/View/HelpPage2.xbf
+#	deleted:    RoamingFavorite/obj/x86/Release/View/OptionsSettingFlyout.g.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/View/OptionsSettingFlyout.g.i.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/View/OptionsSettingFlyout.xaml
+#	deleted:    RoamingFavorite/obj/x86/Release/View/OptionsSettingFlyout.xbf
+#	deleted:    RoamingFavorite/obj/x86/Release/View/Promo/Promo_Sync.g.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/View/Promo/Promo_Sync.g.i.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/View/Promo/Promo_Sync.xaml
+#	deleted:    RoamingFavorite/obj/x86/Release/View/Promo/Promo_Sync.xbf
+#	deleted:    RoamingFavorite/obj/x86/Release/View/SearchResultsPage.g.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/View/SearchResultsPage.g.i.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/View/SearchResultsPage.xaml
+#	deleted:    RoamingFavorite/obj/x86/Release/View/SearchResultsPage.xbf
+#	deleted:    RoamingFavorite/obj/x86/Release/View/SelectFolderUserControl.g.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/View/SelectFolderUserControl.g.i.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/View/SelectFolderUserControl.xaml
+#	deleted:    RoamingFavorite/obj/x86/Release/View/SelectFolderUserControl.xbf
+#	deleted:    RoamingFavorite/obj/x86/Release/View/ShareFavorite.g.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/View/ShareFavorite.g.i.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/View/ShareFavorite.xaml
+#	deleted:    RoamingFavorite/obj/x86/Release/View/ShareFavorite.xbf
+#	deleted:    RoamingFavorite/obj/x86/Release/View/ShareTargetFav.g.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/View/ShareTargetFav.g.i.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/View/ShareTargetFav.xaml
+#	deleted:    RoamingFavorite/obj/x86/Release/View/ShareTargetFav.xbf
+#	deleted:    RoamingFavorite/obj/x86/Release/XamlSaveStateFile.xml
+#	deleted:    RoamingFavorite/obj/x86/Release/XamlTypeInfo.g.cs
+#	deleted:    RoamingFavorite/obj/x86/Release/XamlTypeInfo.g.cs.backup
+#	deleted:    RoamingFavorite/obj/x86/Release/_pkginfo.txt
+#	deleted:    RoamingFavorite/obj/x86/Release/intermediatexaml/RoamingFavorite.exe
+#	deleted:    RoamingFavorite/obj/x86/Release/intermediatexaml/RoamingFavorite.pdb
+#	deleted:    RoamingFavorite/obj/x86/Release/layout.resfiles
+#	deleted:    RoamingFavorite/obj/x86/Release/layout.resfiles.intermediate
+#	deleted:    RoamingFavorite/obj/x86/Release/package.map.txt
+#	deleted:    RoamingFavorite/obj/x86/Release/pri.resfiles
+#	deleted:    RoamingFavorite/obj/x86/Release/pri.resfiles.intermediate
+#	deleted:    RoamingFavorite/obj/x86/Release/priconfig.xml
+#	deleted:    RoamingFavorite/obj/x86/Release/priconfig.xml.intermediate
+#	deleted:    RoamingFavorite/obj/x86/Release/qualifiers.txt
+#	deleted:    RoamingFavorite/obj/x86/Release/qualifiers.txt.intermediate
+#	deleted:    RoamingFavorite/obj/x86/Release/resources.resfiles
+#	deleted:    RoamingFavorite/obj/x86/Release/resources.resfiles.intermediate
+#	modified:   foo.txt
+#

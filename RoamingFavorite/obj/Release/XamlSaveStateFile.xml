@@ -1,0 +1,10 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\poc\roamsvc-code\roamingfavorite\obj\release\intermediatexaml\favoritesbrowser.exe" HashGuid="ce139fe0-3308-d4d9-85c0-adfdd0d56385" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\msadvertisingxaml\8.1\references\commonconfiguration\neutral\microsoft.advertising.winrt.ui.winmd" HashGuid="6588494d-37e3-4bf8-bf82-6a4bc10c0818" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\msadvertisingxaml\8.1\references\commonconfiguration\neutral\microsoftadvertising.winmd" HashGuid="0dde57b7-8c99-5b9a-0771-4cdcca925c59" />
+    <ReferenceAssembly PathName="c:\poc\roamsvc-code\roamingfavorite\htmlagility\winrt45\htmlagilitypack.dll" HashGuid="f2c9a4ce-31d6-6a71-5c53-58cd8e71df15" />
+    <ReferenceAssembly PathName="c:\poc\roamsvc-code\roamingfavorite\bin\release\microsoft.live.dll" HashGuid="129ce77c-af09-9d5d-b95e-bf89af6739c7" />
+    <ReferenceAssembly PathName="c:\poc\roamsvc-code\roamingfavorite\bin\release\newtonsoft.json.dll" HashGuid="e70f704a-5345-3796-c57b-a99765c2073e" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

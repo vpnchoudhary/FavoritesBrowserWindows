@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>VIPINWIN8MSNIA</Machine>
+    <WindowsUser>v-vipink</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Release|x64</SolutionConfiguration>
+    <PackageArchitecture>x64</PackageArchitecture>
+    <PackageIdentityName>15737ProductivityLab.RoamingFavorites</PackageIdentityName>
+    <IntermediateOutputPath>C:\POC\roamsvc-code\RoamingFavorite\obj\x64\Release\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\POC\roamsvc-code\RoamingFavorite\bin\x64\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\bin\x64\Release\FavoritesBrowser.exe">
+      <PackagePath>FavoritesBrowser.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\References\CommonConfiguration\neutral\Microsoft.Advertising.WinRT.UI.winmd">
+      <PackagePath>Microsoft.Advertising.WinRT.UI.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\References\CommonConfiguration\neutral\MicrosoftAdvertising.winmd">
+      <PackagePath>MicrosoftAdvertising.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\HTMLAgility\winrt45\HtmlAgilityPack.dll">
+      <PackagePath>HtmlAgilityPack.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Live\v5.6\Windows Store app XAML\References\CommonConfiguration\Neutral\Microsoft.Live.dll">
+      <PackagePath>Microsoft.Live.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\Redist\CommonConfiguration\neutral\Microsoft.Advertising.WinRT.UI\AdSettingsFlyout.xbf">
+      <PackagePath>Microsoft.Advertising.WinRT.UI\AdSettingsFlyout.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\Redist\CommonConfiguration\neutral\Microsoft.Advertising.WinRT.UI\Themes\Generic.xbf">
+      <PackagePath>Microsoft.Advertising.WinRT.UI\Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\Redist\CommonConfiguration\neutral\Microsoft.Advertising.WinRT.UI\bootstrap.html">
+      <PackagePath>Microsoft.Advertising.WinRT.UI\bootstrap.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\Redist\CommonConfiguration\neutral\Microsoft.Advertising.WinRT.UI\ormma.js">
+      <PackagePath>Microsoft.Advertising.WinRT.UI\ormma.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\AdSamplePage.xaml.txt">
+      <PackagePath>AdSamplePage.xaml.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\AppView.png">
+      <PackagePath>Assets\AppView.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\BackArrow.png">
+      <PackagePath>Assets\BackArrow.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\background.png">
+      <PackagePath>Assets\background.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\BadgeLogo.scale-100.png">
+      <PackagePath>Assets\BadgeLogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\bg-body.png">
+      <PackagePath>Assets\bg-body.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\BrandRoamingFav_150.png">
+      <PackagePath>Assets\BrandRoamingFav_150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\BrandRoamingFav_50.png">
+      <PackagePath>Assets\BrandRoamingFav_50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\BrandRoamingFav_620.png">
+      <PackagePath>Assets\BrandRoamingFav_620.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\error.png">
+      <PackagePath>Assets\error.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\favorite.png">
+      <PackagePath>Assets\favorite.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\fileIcon.png">
+      <PackagePath>Assets\fileIcon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\Folder-icon.png">
+      <PackagePath>Assets\Folder-icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\Folder.png">
+      <PackagePath>Assets\Folder.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\FolderIcon.png">
+      <PackagePath>Assets\FolderIcon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\html.png">
+      <PackagePath>Assets\html.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\ielogo.png">
+      <PackagePath>Assets\ielogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\Promo_SavePassword.png">
+      <PackagePath>Assets\Promo_SavePassword.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\Promo_ShareFavorite.png">
+      <PackagePath>Assets\Promo_ShareFavorite.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\Promo_Snapmode_project.png">
+      <PackagePath>Assets\Promo_Snapmode_project.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\RoamingFavlatest_flash.scale-100.png">
+      <PackagePath>Assets\RoamingFavlatest_flash.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\RoamingFavorite_LandingPage.png">
+      <PackagePath>Assets\RoamingFavorite_LandingPage.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\SkyDrive.png">
+      <PackagePath>Assets\SkyDrive.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\SkyDriveSetupInstruction.png">
+      <PackagePath>Assets\SkyDriveSetupInstruction.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\LightGray.png">
+      <PackagePath>Assets\LightGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\MediumGray.png">
+      <PackagePath>Assets\MediumGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\DarkGray.png">
+      <PackagePath>Assets\DarkGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\Square70x70Logo.scale-100.png">
+      <PackagePath>Assets\Square70x70Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\error.html">
+      <PackagePath>Assets\error.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\RoamingFavorite_skydrive_install.jpg">
+      <PackagePath>Assets\RoamingFavorite_skydrive_install.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\Assets\RoamingFavorite_sync.jpg">
+      <PackagePath>Assets\RoamingFavorite_sync.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\XML\FavoriteSuggestionList.xml">
+      <PackagePath>XML\FavoriteSuggestionList.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\bin\x64\Release\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\bin\x64\Release\View\AboutSettingsFlyout.xbf">
+      <PackagePath>View\AboutSettingsFlyout.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\bin\x64\Release\HelpSettingsFlyout.xbf">
+      <PackagePath>HelpSettingsFlyout.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\bin\x64\Release\View\Promo\FavoriteSuggestions.xbf">
+      <PackagePath>View\Promo\FavoriteSuggestions.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\bin\x64\Release\View\Promo\Promo_Sync.xbf">
+      <PackagePath>View\Promo\Promo_Sync.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\bin\x64\Release\View\OptionsSettingFlyout.xbf">
+      <PackagePath>View\OptionsSettingFlyout.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\bin\x64\Release\View\HelpPage2.xbf">
+      <PackagePath>View\HelpPage2.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\bin\x64\Release\View\HelpPage1.xbf">
+      <PackagePath>View\HelpPage1.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\bin\x64\Release\View\SelectFolderUserControl.xbf">
+      <PackagePath>View\SelectFolderUserControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\bin\x64\Release\View\SearchResultsPage.xbf">
+      <PackagePath>View\SearchResultsPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\bin\x64\Release\View\CredentialSettingsFlyout.xbf">
+      <PackagePath>View\CredentialSettingsFlyout.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\bin\x64\Release\Common\StandardStyles.xbf">
+      <PackagePath>Common\StandardStyles.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\bin\x64\Release\View\ContentViewerWithAppBar.xbf">
+      <PackagePath>View\ContentViewerWithAppBar.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\bin\x64\Release\View\GroupedItemsPage.xbf">
+      <PackagePath>View\GroupedItemsPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\bin\x64\Release\View\ShareFavorite.xbf">
+      <PackagePath>View\ShareFavorite.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\bin\x64\Release\SimpleSettingsNarrow.xbf">
+      <PackagePath>SimpleSettingsNarrow.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\bin\x64\Release\View\ShareTargetFav.xbf">
+      <PackagePath>View\ShareTargetFav.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\bin\x64\Release\FavoritesBrowser.xr.xml">
+      <PackagePath>FavoritesBrowser.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\POC\roamsvc-code\RoamingFavorite\bin\x64\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

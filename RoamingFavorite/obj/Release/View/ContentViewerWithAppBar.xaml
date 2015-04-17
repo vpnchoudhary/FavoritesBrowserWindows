@@ -1,0 +1,138 @@
+﻿<common:LayoutAwarePage
+    x:Name="pageRoot"
+    x:Class="RoamingFavorite.View.ContentViewerWithAppBar"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RoamingFavorite"
+    xmlns:common="using:RoamingFavorite.Common"
+    xmlns:view="using:RoamingFavorite.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Margin="0,1,0,-1">
+
+    <Grid x:Name="_Root" Style="{StaticResource LayoutRootStyle}" Background="LightGray">
+        <!--<Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>-->
+        
+        
+
+        <Popup x:Name="AddBookmarkPopup" IsLightDismissEnabled="True" IsOpen="False" >
+            <Border x:Name="AddBookMarkBorder" BorderBrush="Black" Background="White" BorderThickness="2"  Width="400" Height="250" >
+                <Grid VerticalAlignment="Center" Width="Auto" Height="Auto" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Margin="10" Grid.Row="0" Text="Bookmark Name" Style="{StaticResource ResourceKey=TitleTextBlockStyle}" />
+                    <TextBox Margin="10"  Grid.Row="1" Name="AddBookmarkName" TextWrapping="NoWrap" />
+                    <TextBlock Margin="10" Grid.Row="2" Text="Bookmark URL" Style="{StaticResource ResourceKey=TitleTextBlockStyle}" />
+                    <TextBox Margin="10"  Grid.Row="3" Name="AddBookmarkURL" TextWrapping="NoWrap" />
+                    <Button x:ConnectionId='3' Grid.Row="4" x:Name="CreateBookmarkButton" Content="Create" HorizontalAlignment="Right" Margin="10"                                 />
+                </Grid>
+            </Border>
+        </Popup>
+        
+        <Grid x:Name="GridWebView" >
+            <WebView x:Name="FavoriteBrowser">
+                <WebView.RenderTransform>
+                    <CompositeTransform/>
+                </WebView.RenderTransform>
+                <FlyoutBase.AttachedFlyout>
+                    <Flyout x:Name="CredsFlyout" Placement="Bottom" >
+                        <StackPanel HorizontalAlignment="Center">
+                            <TextBlock Style="{StaticResource BaseTextBlockStyle}"
+                                       Text="Do you want to save entered credentials for this website?"
+                                       Margin="0,5,0,5" />
+                            <Grid HorizontalAlignment="Center">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Button x:ConnectionId='1'                           Margin="0,5,50,0" Content="Yes" Grid.Column="0"/>
+                                <Button x:ConnectionId='2'                               Margin="0,5,0,0" Content="No" Grid.Column="1" />
+                            </Grid>
+                        </StackPanel>
+                        <Flyout.FlyoutPresenterStyle>
+                            <Style TargetType="FlyoutPresenter">
+                                <Setter Property="Background" Value="#EBECEE"/>
+                                <Setter Property="MinHeight" Value="100"/>
+                                <Setter Property="MinWidth" Value="500"/>
+                                <Setter Property="HorizontalAlignment" Value="Center" />
+                            </Style>
+                        </Flyout.FlyoutPresenterStyle>
+                    </Flyout>
+                </FlyoutBase.AttachedFlyout>
+            </WebView>
+            
+            <StackPanel x:Name="ProgressRing"
+                        Height="100" Width="220"
+                        Orientation="Horizontal"
+                        Background="Gray"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                
+                <ProgressRing x:Name="FavoriteBrowser_ProgressRing"
+                              Foreground="White"
+                              IsActive="True"
+                              Height="55" Width="55"
+                              VerticalAlignment="Center"
+                              Margin="20,0,20,0"/>
+                
+                <TextBlock x:Name="Loading"
+                           Text="Loading"
+                           Foreground="White"
+                           FontSize="30"
+                           VerticalAlignment="Center"
+                           Style="{StaticResource SubheaderTextBlockStyle}"/>
+            </StackPanel>
+        </Grid>
+
+        <!--App Orientation States-->
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="ApplicationViewStates">
+                <VisualState x:Name="FullScreenLandscape"/>
+                <VisualState x:Name="Filled">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="FavoriteBrowser"  Storyboard.TargetProperty="RenderTransform">
+                            <!--<DiscreteObjectKeyFrame KeyTime="0">
+                                <DiscreteObjectKeyFrame.Value>
+                                    <CompositeTransform ScaleY="0.9" ScaleX="0.9" />
+                                </DiscreteObjectKeyFrame.Value>
+                            </DiscreteObjectKeyFrame>-->
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="FullScreenPortrait">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="FavoriteBrowser"  Storyboard.TargetProperty="RenderTransform">
+                            <!--<DiscreteObjectKeyFrame KeyTime="0">
+                                <DiscreteObjectKeyFrame.Value>
+                                    <CompositeTransform ScaleY="1" ScaleX="0.5" CenterX="300" CenterY="300" />
+                                </DiscreteObjectKeyFrame.Value>
+                            </DiscreteObjectKeyFrame>-->
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Snapped">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="FavoriteBrowser"  Storyboard.TargetProperty="RenderTransform">
+                            <!--<DiscreteObjectKeyFrame KeyTime="0">
+                                <DiscreteObjectKeyFrame.Value>
+                                    <CompositeTransform ScaleY="0.75" ScaleX="0.75" />
+                                </DiscreteObjectKeyFrame.Value>
+                            </DiscreteObjectKeyFrame>-->
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </Grid>
+
+</common:LayoutAwarePage>
+

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FavoriteList>
+  <FavoriteItem Title="Facebook" URL="http://facebook.com" ImagePath="" />
+  <FavoriteItem Title="Youtube" URL="http://youtube.com" ImagePath="" />
+  <FavoriteItem Title="Yahoo" URL="http://yahoo.com" ImagePath="" />
+  <FavoriteItem Title="Amazon" URL="http://amazon.com" ImagePath="" />
+  <FavoriteItem Title="Wikipedia" URL="http://wikipedia.org" ImagePath="" />
+  <FavoriteItem Title="EBay" URL="http://ebay.com" ImagePath="" />
+  <FavoriteItem Title="Twitter" URL="http://twitter.com" ImagePath="" />
+  <FavoriteItem Title="Craigslist" URL="http://craigslist.org" ImagePath="" />
+  <FavoriteItem Title="Pinterest" URL="http://pinterest.com" ImagePath="" />
+  <FavoriteItem Title="Tumblr" URL="http://tumblr.com" ImagePath="" />
+  <FavoriteItem Title="Huffington Post" URL="http://huffingtonpost.com" ImagePath="" />
+  <FavoriteItem Title="CNN" URL="http://cnn.com" ImagePath="" />
+  <FavoriteItem Title="Google" URL="http://google.com" ImagePath="" />
+  <FavoriteItem Title="Instagram" URL="http://instagram.com" ImagePath="" />
+  <FavoriteItem Title="Walmart" URL="http://walmart.com" ImagePath="" />
+  <FavoriteItem Title="MSN" URL="http://msn.com" ImagePath="" />
+  <!--
+  <FavoriteItem Title="Apple" URL="http://apple.com" ImagePath="" />
+  <FavoriteItem Title="Netflix" URL="http://netflix.com" ImagePath="" />
+  <FavoriteItem Title="Weather" URL="http://weather.com" ImagePath="" />
+  <FavoriteItem Title="Yelp" URL="http://yelp.com" ImagePath="" />
+  <FavoriteItem Title="NYTimes" URL="http://nytimes.com" ImagePath="" />
+  <FavoriteItem Title="Ask.com" URL="http://ask.com" ImagePath="" />
+  <FavoriteItem Title="BestBuy" URL="http://bestbuy.com" ImagePath="" />
+  -->
+</FavoriteList> 
